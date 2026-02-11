@@ -1,0 +1,96 @@
+import { motion } from "framer-motion";
+import { ArrowRight, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const HeroSection = () => {
+  return (
+    <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-20">
+
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
+        {/* Image - Shows first on mobile, second on desktop */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="order-1 flex justify-center lg:order-2 lg:justify-end"
+        >
+          <img
+            src="/mesam.webp"
+            alt="Muhammad Measm Raza"
+            className="h-[340px] w-[340px] rounded-full border-4 border-primary/30 object-cover shadow-2xl sm:h-[360px] sm:w-[360px] md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px]"
+          />
+        </motion.div>
+
+        {/* Text Content - Shows second on mobile, first on desktop */}
+        <div className="order-2 text-center lg:order-1 lg:text-left">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5 text-xs font-medium text-muted-foreground">
+              <Sparkles size={14} className="text-primary" />
+              Available for Impact
+            </div>
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+            className="mb-6 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl"
+          >
+            Muhammad
+            <br />
+            <span className="text-primary">Measm Raza</span>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.25 }}
+            className="mb-4 text-base font-medium text-foreground sm:text-lg md:text-xl"
+          >
+            Founder | Climate-Tech Entrepreneur | Global Impact Builder
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.35 }}
+            className="mb-6 max-w-2xl text-base text-muted-foreground sm:text-lg md:text-xl lg:max-w-none"
+          >
+            Building verified climate impact, scalable technology, and globally distributed companies from day one.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.45 }}
+            className="mb-10 text-sm text-muted-foreground"
+          >
+            Operating globally · Remote-first · Founder-led
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.55 }}
+            className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start"
+          >
+            <Button asChild size="lg" className="w-full rounded-full px-8 text-base font-semibold sm:w-auto">
+              <a href="#work">
+                Explore the Work <ArrowRight size={18} className="ml-1" />
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="w-full rounded-full px-8 text-base font-semibold sm:w-auto">
+              <a href="#contact">Contact Founder</a>
+            </Button>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
