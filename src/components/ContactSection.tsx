@@ -92,7 +92,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-gradient-to-b from-background via-background to-card/30 px-4 py-20 sm:px-6 md:py-28 lg:py-32"
+      className="relative overflow-hidden bg-gradient-to-b from-background via-background to-card/30 px-4 py-16 sm:px-6 sm:py-20 md:py-28 lg:py-32"
     >
       <div className="relative mx-auto max-w-7xl">
         {/* Animated background elements */}
@@ -106,21 +106,21 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative z-10 mb-12 text-center sm:mb-16 lg:mb-20"
+          className="relative z-10 mb-10 text-center sm:mb-12 md:mb-16 lg:mb-20"
         >
-          <div className="mb-4 flex items-center justify-center gap-4 sm:mb-6">
-            <span className="h-[2px] w-12 bg-primary" />
-            <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">
+          <div className="mb-3 flex items-center justify-center gap-3 sm:mb-4 sm:gap-4 md:mb-6">
+            <span className="h-[2px] w-8 bg-primary sm:w-12" />
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary sm:text-xs sm:tracking-[0.4em]">
               Get in Touch
             </span>
-            <span className="h-[2px] w-12 bg-primary" />
+            <span className="h-[2px] w-8 bg-primary sm:w-12" />
           </div>
-          <h2 className="mb-4 text-4xl font-black uppercase leading-none tracking-tighter text-foreground sm:mb-6 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+          <h2 className="mb-3 text-3xl font-black uppercase leading-none tracking-tighter text-foreground sm:mb-4 sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl xl:text-7xl">
             Let's Build
             <br />
             Together<span className="text-primary">.</span>
           </h2>
-          <p className="mx-auto max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg md:text-xl">
+          <p className="mx-auto max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg lg:text-xl">
             Have a project in mind? Choose your preferred way to connect.
           </p>
         </motion.div>
@@ -131,7 +131,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative z-10 mb-20 grid gap-4 sm:gap-6 md:grid-cols-3"
+          className="relative z-10 mb-12 grid gap-4 sm:mb-16 sm:gap-6 md:grid-cols-3 lg:mb-20"
         >
           {contactMethods.map((method, i) => (
             <motion.a
@@ -143,25 +143,25 @@ const ContactSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group relative overflow-hidden rounded-3xl border border-border bg-card p-6 transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 sm:p-8"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-5 transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 sm:rounded-3xl sm:p-6 md:p-8"
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${method.color} opacity-0 transition-opacity duration-500 group-hover:opacity-100`} />
 
               <div className="relative">
-                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-2 ring-primary/20 transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground group-hover:ring-primary">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary ring-2 ring-primary/20 transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground group-hover:ring-primary sm:mb-6 sm:h-16 sm:w-16 sm:rounded-2xl">
                   {method.icon}
                 </div>
 
-                <p className="mb-2 text-xs font-bold uppercase tracking-widest text-primary">
+                <p className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-primary sm:mb-2 sm:text-xs">
                   {method.label}
                 </p>
-                <p className="mb-4 text-lg font-bold text-foreground">
+                <p className="mb-3 text-base font-bold text-foreground sm:mb-4 sm:text-lg">
                   {method.value}
                 </p>
 
-                <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors group-hover:text-primary">
+                <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground transition-colors group-hover:text-primary sm:text-sm">
                   Connect Now
-                  <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                  <ArrowRight size={14} className="transition-transform group-hover:translate-x-1 sm:h-4 sm:w-4" />
                 </div>
               </div>
             </motion.a>
@@ -169,25 +169,25 @@ const ContactSection = () => {
         </motion.div>
 
         {/* Form + Calendar Section */}
-        <div className="relative z-10 grid gap-8 lg:grid-cols-[1fr_4fr]">
+        <div className="relative z-10 grid gap-6 sm:gap-8 lg:grid-cols-[1fr_4fr]">
           {/* Calendar Side */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="space-y-6"
+            className="space-y-4 sm:space-y-6"
           >
-            <div className="rounded-3xl border border-border bg-card p-6">
-              <div className="mb-4 flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary ring-2 ring-primary/20">
-                  <CalendarIcon size={20} />
+            <div className="rounded-2xl border border-border bg-card p-4 sm:rounded-3xl sm:p-6">
+              <div className="mb-3 flex items-center gap-2 sm:mb-4 sm:gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary ring-2 ring-primary/20 sm:h-12 sm:w-12 sm:rounded-xl">
+                  <CalendarIcon size={18} className="sm:h-5 sm:w-5" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-black uppercase tracking-tight text-foreground">
+                  <h3 className="text-base font-black uppercase tracking-tight text-foreground sm:text-lg">
                     Schedule a Call
                   </h3>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-[10px] text-muted-foreground sm:text-xs">
                     Pick your preferred date
                   </p>
                 </div>
@@ -198,22 +198,22 @@ const ContactSection = () => {
                 selected={date}
                 onSelect={setDate}
                 disabled={(date) => date < new Date()}
-                className="mx-auto w-full rounded-2xl border border-border bg-background/50"
+                className="mx-auto w-full rounded-xl border border-border bg-background/50 sm:rounded-2xl"
               />
 
               {date && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="mt-6 space-y-3"
+                  className="mt-4 space-y-3 sm:mt-6"
                 >
-                  <div className="flex items-center gap-3 rounded-2xl bg-primary/10 p-4 ring-1 ring-primary/20">
-                    <Clock size={20} className="text-primary" />
+                  <div className="flex items-center gap-2 rounded-xl bg-primary/10 p-3 ring-1 ring-primary/20 sm:gap-3 sm:rounded-2xl sm:p-4">
+                    <Clock size={18} className="text-primary sm:h-5 sm:w-5" />
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-widest text-primary">
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-primary sm:text-xs">
                         Selected Date
                       </p>
-                      <p className="text-sm font-medium text-foreground">
+                      <p className="text-xs font-medium text-foreground sm:text-sm">
                         {format(date, "PPPP")}
                       </p>
                     </div>
@@ -223,27 +223,27 @@ const ContactSection = () => {
             </div>
 
             {/* Info Card */}
-            <div className="rounded-3xl border border-border bg-gradient-to-br from-primary/5 to-transparent p-8">
-              <div className="mb-4 flex items-center gap-3">
-                <Sparkles size={20} className="text-primary" />
-                <h4 className="text-sm font-bold uppercase tracking-widest text-primary">
+            <div className="rounded-2xl border border-border bg-gradient-to-br from-primary/5 to-transparent p-5 sm:rounded-3xl sm:p-6 md:p-8">
+              <div className="mb-3 flex items-center gap-2 sm:mb-4 sm:gap-3">
+                <Sparkles size={18} className="text-primary sm:h-5 sm:w-5" />
+                <h4 className="text-xs font-bold uppercase tracking-widest text-primary sm:text-sm">
                   What to Expect
                 </h4>
               </div>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li className="flex items-start gap-3">
+              <ul className="space-y-2.5 text-xs text-muted-foreground sm:space-y-3 sm:text-sm">
+                <li className="flex items-start gap-2 sm:gap-3">
                   <div className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                   <span>30-minute consultation call</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-start gap-2 sm:gap-3">
                   <div className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                   <span>Discuss your project goals & requirements</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-start gap-2 sm:gap-3">
                   <div className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                   <span>Get expert recommendations & next steps</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-start gap-2 sm:gap-3">
                   <div className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                   <span>Response within 24 hours guaranteed</span>
                 </li>
@@ -260,21 +260,21 @@ const ContactSection = () => {
           >
             <form
               onSubmit={handleSubmit}
-              className="rounded-3xl border border-border bg-card p-8"
+              className="rounded-2xl border border-border bg-card p-5 sm:rounded-3xl sm:p-6 md:p-8"
             >
-              <div className="mb-8">
-                <h3 className="mb-2 text-2xl font-black uppercase tracking-tight text-foreground">
+              <div className="mb-6 sm:mb-8">
+                <h3 className="mb-1.5 text-xl font-black uppercase tracking-tight text-foreground sm:mb-2 sm:text-2xl">
                   Send a Message
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-xs text-muted-foreground sm:text-sm">
                   Fill out the form below and I'll get back to you soon.
                 </p>
               </div>
 
-              <div className="space-y-5">
-                <div className="grid gap-4 sm:grid-cols-2">
+              <div className="space-y-4 sm:space-y-5">
+                <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
                   <div className="group">
-                    <label className="mb-2 block text-xs font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary">
+                    <label className="mb-1.5 block text-[10px] font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary sm:mb-2 sm:text-xs">
                       Full Name *
                     </label>
                     <Input
@@ -282,11 +282,11 @@ const ContactSection = () => {
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                       required
-                      className="h-12 rounded-xl border-border bg-background transition-all focus:border-primary/40 focus:ring-2 focus:ring-primary/20"
+                      className="h-11 rounded-lg border-border bg-background transition-all focus:border-primary/40 focus:ring-2 focus:ring-primary/20 sm:h-12 sm:rounded-xl"
                     />
                   </div>
                   <div className="group">
-                    <label className="mb-2 block text-xs font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary">
+                    <label className="mb-1.5 block text-[10px] font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary sm:mb-2 sm:text-xs">
                       Email *
                     </label>
                     <Input
@@ -295,32 +295,32 @@ const ContactSection = () => {
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
                       required
-                      className="h-12 rounded-xl border-border bg-background transition-all focus:border-primary/40 focus:ring-2 focus:ring-primary/20"
+                      className="h-11 rounded-lg border-border bg-background transition-all focus:border-primary/40 focus:ring-2 focus:ring-primary/20 sm:h-12 sm:rounded-xl"
                     />
                   </div>
                 </div>
 
-                <div className="grid gap-4 sm:grid-cols-2">
+                <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
                   <div className="group">
-                    <label className="mb-2 block text-xs font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary">
+                    <label className="mb-1.5 block text-[10px] font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary sm:mb-2 sm:text-xs">
                       Company
                     </label>
                     <Input
                       placeholder="Your Company"
                       value={form.company}
                       onChange={(e) => setForm({ ...form, company: e.target.value })}
-                      className="h-12 rounded-xl border-border bg-background transition-all focus:border-primary/40 focus:ring-2 focus:ring-primary/20"
+                      className="h-11 rounded-lg border-border bg-background transition-all focus:border-primary/40 focus:ring-2 focus:ring-primary/20 sm:h-12 sm:rounded-xl"
                     />
                   </div>
                   <div className="group">
-                    <label className="mb-2 block text-xs font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary">
+                    <label className="mb-1.5 block text-[10px] font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary sm:mb-2 sm:text-xs">
                       Project Type *
                     </label>
                     <select
                       value={form.projectType}
                       onChange={(e) => setForm({ ...form, projectType: e.target.value })}
                       required
-                      className="h-12 w-full rounded-xl border border-border bg-background px-3 text-sm text-foreground transition-all focus:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                      className="h-11 w-full rounded-lg border border-border bg-background px-3 text-xs text-foreground transition-all focus:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 sm:h-12 sm:rounded-xl sm:text-sm"
                     >
                       <option value="">Select type</option>
                       {projectTypes.map((type) => (
@@ -334,13 +334,13 @@ const ContactSection = () => {
 
                 {date && (
                   <div className="group">
-                    <label className="mb-2 block text-xs font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary">
+                    <label className="mb-1.5 block text-[10px] font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary sm:mb-2 sm:text-xs">
                       Preferred Time
                     </label>
                     <select
                       value={form.preferredTime}
                       onChange={(e) => setForm({ ...form, preferredTime: e.target.value })}
-                      className="h-12 w-full rounded-xl border border-border bg-background px-3 text-sm text-foreground transition-all focus:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                      className="h-11 w-full rounded-lg border border-border bg-background px-3 text-xs text-foreground transition-all focus:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 sm:h-12 sm:rounded-xl sm:text-sm"
                     >
                       <option value="">Select time</option>
                       {timeSlots.map((slot) => (
@@ -353,7 +353,7 @@ const ContactSection = () => {
                 )}
 
                 <div className="group">
-                  <label className="mb-2 block text-xs font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary">
+                  <label className="mb-1.5 block text-[10px] font-bold uppercase tracking-widest text-muted-foreground transition-colors group-focus-within:text-primary sm:mb-2 sm:text-xs">
                     Your Message *
                   </label>
                   <Textarea
@@ -362,18 +362,18 @@ const ContactSection = () => {
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                     required
                     rows={5}
-                    className="rounded-xl border-border bg-background transition-all focus:border-primary/40 focus:ring-2 focus:ring-primary/20"
+                    className="rounded-lg border-border bg-background text-xs transition-all focus:border-primary/40 focus:ring-2 focus:ring-primary/20 sm:rounded-xl sm:text-sm"
                   />
                 </div>
 
                 <Button
                   type="submit"
                   size="lg"
-                  className="group w-full rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 hover:shadow-xl hover:shadow-primary/30"
+                  className="group w-full rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 sm:text-sm"
                 >
-                  <Send size={16} className="mr-2 transition-transform group-hover:translate-x-0.5" />
+                  <Send size={14} className="mr-2 transition-transform group-hover:translate-x-0.5 sm:h-4 sm:w-4" />
                   Send Message
-                  <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight size={14} className="ml-2 transition-transform group-hover:translate-x-1 sm:h-4 sm:w-4" />
                 </Button>
               </div>
             </form>
@@ -386,9 +386,9 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="relative z-10 mt-12 flex items-center justify-center gap-3 text-sm text-muted-foreground"
+          className="relative z-10 mt-8 flex items-center justify-center gap-2 text-xs text-muted-foreground sm:mt-10 sm:gap-3 sm:text-sm md:mt-12"
         >
-          <MapPin size={16} className="text-primary" />
+          <MapPin size={14} className="text-primary sm:h-4 sm:w-4" />
           <span>Operating Globally · Remote-First · Available Worldwide</span>
         </motion.div>
       </div>
