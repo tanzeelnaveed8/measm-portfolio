@@ -224,65 +224,7 @@ const projects: Project[] = [
       },
     ],
   },
-  {
-    title: "DoorBeyond",
-    description:
-      "DoorBeyond is about stepping through a door into something greater. It represents going beyond limits into bold thinking, creativity, and transformation.",
-    tags: ["Branding", "Creative", "Strategy"],
-    image: "/doorbeyond.png",
-    accent: "featured",
-    link: "",
-    sections: [
-      {
-        label: "01 // Vision",
-        heading: "Our Vision",
-        description:
-          "DoorBeyond is about stepping through a door into something greater. It represents going beyond limits into bold thinking, creativity, and transformation. It's a name that stands for courage, change, and new beginnings.",
-        items: [
-          {
-            title: "Courage",
-            description: "The strength to step through the door and embrace change.",
-            icon: <Heart size={20} />,
-          },
-          {
-            title: "Creativity",
-            description: "Bold thinking that transforms ideas into lasting brands.",
-            icon: <Sparkles size={20} />,
-          },
-          {
-            title: "Transformation",
-            description: "Going beyond limits into something greater.",
-            icon: <DoorOpen size={20} />,
-          },
-        ],
-      },
-      {
-        label: "02 // Story",
-        heading: "The meaning and story behind DoorBeyond",
-        items: [
-          {
-            title: "Born from a journey",
-            description:
-              "DoorBeyond was born from a journey of facing unexpected challenges and choosing to grow through them.",
-            icon: <Target size={18} />,
-          },
-          {
-            title: "Courage, clarity, and strength",
-            description:
-              "It stands for courage, clarity, and the strength to move forward.",
-            icon: <Zap size={18} />,
-          },
-          {
-            title: "Opening doors with purpose",
-            description:
-              "Every brand has a door. We help open it with purpose and guide it beyond, into something bold and lasting.",
-            icon: <DoorOpen size={18} />,
-          },
-        ],
-      },
-    ],
-  },
-  {
+{
     title: "Acceptopia",
     description:
       "A modern, gamified platform designed to transform the US university application journey into an interactive, motivating, and stress-free experience.",
@@ -372,6 +314,95 @@ const projects: Project[] = [
             description:
               "Breaking barriers so every student, regardless of background, has the tools to pursue their dream education.",
             icon: <Award size={18} />,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Oatify",
+    description:
+      "A trusted breakfast brand promoting balanced living through gluco-friendly nutrition that supports stable energy levels and healthier lifestyles.",
+    tags: ["Food-Tech", "Health", "Wellness"],
+    image: "/oatify.jpeg",
+    accent: "featured",
+    link: "",
+    sections: [
+      {
+        label: "01 // Vision",
+        heading: "Our Vision",
+        description:
+          "Oatify aims to become a trusted and preferred breakfast brand that promotes balanced living through gluco-friendly nutrition. The vision is to help individuals and families maintain stable energy levels and healthier lifestyles by making smart breakfast choices every day.",
+        items: [
+          {
+            title: "Trusted breakfast brand",
+            description:
+              "Building trust through consistent quality and gluco-friendly nutrition that delivers on its promise.",
+            icon: <Award size={20} />,
+          },
+          {
+            title: "Balanced living",
+            description:
+              "Promoting a lifestyle of balance where nutrition supports sustained energy and overall wellness.",
+            icon: <Heart size={20} />,
+          },
+          {
+            title: "Smart choices daily",
+            description:
+              "Making healthy breakfast decisions simple and accessible for individuals and families every morning.",
+            icon: <Target size={20} />,
+          },
+        ],
+      },
+      {
+        label: "02 // Mission",
+        heading: "Our Mission",
+        description:
+          "Oatify is committed to providing high-quality, gluco-balanced oats that support steady blood sugar levels and sustained energy. The brand focuses on making healthy eating simple, accessible, and enjoyable, encouraging better morning habits and long-term wellness.",
+        items: [
+          {
+            title: "Steady blood sugar",
+            description:
+              "Gluco-balanced oats designed to maintain stable blood sugar levels throughout the morning.",
+            icon: <Zap size={18} />,
+          },
+          {
+            title: "Sustained energy",
+            description:
+              "High-quality nutrition that provides lasting energy without crashes or sugar spikes.",
+            icon: <Heart size={18} />,
+          },
+          {
+            title: "Simple & accessible",
+            description:
+              "Making healthy eating enjoyable and easy to incorporate into daily routines for long-term wellness.",
+            icon: <CheckCircle size={18} />,
+          },
+        ],
+      },
+      {
+        label: "03 // Brand Story",
+        heading: "The story behind Oatify",
+        description:
+          "Oatify was created with the belief that breakfast should nourish the body, not cause energy crashes or sugar spikes. In today's fast-paced world, many people struggle with unhealthy morning choices that affect their focus and productivity. Oatify offers a smarter alternative — gluco-balanced oats designed to support stable energy and a healthier start to the day. It's more than just oats; it's a step toward a balanced lifestyle.",
+        items: [
+          {
+            title: "Nourish, not crash",
+            description:
+              "Born from the belief that breakfast should fuel your body with sustained energy, not cause sugar spikes.",
+            icon: <Sparkles size={18} />,
+          },
+          {
+            title: "Smarter alternative",
+            description:
+              "Addressing the challenge of unhealthy morning choices that impact focus and productivity in fast-paced lives.",
+            icon: <Target size={18} />,
+          },
+          {
+            title: "Beyond just oats",
+            description:
+              "More than a product — it's a commitment to balanced living and healthier daily habits.",
+            icon: <Leaf size={18} />,
           },
         ],
       },
