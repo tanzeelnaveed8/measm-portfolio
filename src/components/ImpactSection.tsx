@@ -144,7 +144,7 @@ const ImpactSection = () => {
             <motion.div
               key={item.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-[1.5rem] border border-border bg-gradient-to-br from-card via-card to-primary/[0.03] p-7 transition-all duration-500 hover:border-[#0706F1]/30 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:p-9"
+              className="group relative overflow-hidden rounded-[1.5rem] border-[#3B5BFF] border bg-gradient-to-br from-card via-card to-primary/[0.03] p-7 transition-all duration-500 hover:border-[#3B5BFF]/30 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:p-9"
             >
               <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-[#0706F1]/5 blur-2xl transition-all duration-700 group-hover:bg-[#0706F1]/10" />
               <div className="relative">

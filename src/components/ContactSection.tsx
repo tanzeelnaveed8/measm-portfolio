@@ -190,7 +190,7 @@ const ContactSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card   p-3 md:p-5 transition-all duration-500 hover:-translate-y-2 hover:border-[#0706F1]/40 hover:shadow-2xl hover:shadow-[#0706F1]/10 sm:rounded-3xl sm:p-6 md:p-8"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card   p-3 md:p-5 transition-all duration-500 hover:-translate-y-2 hover:border-[#0706F1]/40 hover:shadow-xl  hover:shadow-[#0706F1]/10 sm:rounded-3xl sm:p-6 md:p-8"
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${method.color} opacity-0 transition-opacity duration-500 group-hover:opacity-100`} />
 
@@ -246,10 +246,10 @@ const ContactSection = () => {
                 onSelect={setDate}
                 disabled={(date) => date < new Date()}
                 className="mx-auto flex flex-col justify-center items-center w-full rounded-xl border border-border bg-background/50 sm:rounded-2xl"
-                // // ADDED: Custom styling for the selected date
-                // classNames={{
-                //   day_selected: "bg-[#0706F1]  text-white hover:bg-[#0706F1] hover:text-white focus:bg-[#0706F1] focus:text-white",
-                // }}
+              // // ADDED: Custom styling for the selected date
+              // classNames={{
+              //   day_selected: "bg-[#0706F1]  text-primary hover:bg-[#0706F1] hover:text-primary focus:bg-[#0706F1] focus:text-primary",
+              // }}
               />
 
               {date && (
@@ -314,7 +314,7 @@ const ContactSection = () => {
               className="rounded-2xl border border-border bg-card p-2 py-4 sm:rounded-3xl sm:p-6 md:p-8"
             >
               <div className="mb-6 sm:mb-8">
-                <h3 className="mb-1.5 text-xl font-black uppercase tracking-tight text-foreground sm:mb-2 sm:text-2xl">
+                <h3 className="mb-1.5 text-lg  md:text-xl font-black uppercase tracking-tight text-foreground sm:mb-2 sm:text-2xl">
                   Send a Message
                 </h3>
                 <p className="text-xs text-muted-foreground sm:text-sm">

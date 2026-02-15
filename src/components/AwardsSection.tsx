@@ -194,7 +194,7 @@ const AwardsSection = () => {
             <motion.div
               key={item.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-[#0706F1]/20 bg-gradient-to-br from-primary/[0.08] via-card to-card p-6 transition-all duration-500 hover:border-[#0706F1]/40 hover:shadow-2xl hover:shadow-[#0706F1]/20 hover:-translate-y-2 sm:rounded-3xl sm:p-8 md:p-10"
+              className="group relative overflow-hidden rounded-2xl border border-[#0706F1]/20 bg-gradient-to-br from-primary/[0.08] via-card to-card p-6 transition-all duration-500 hover:border-[#0706F1]/40 hover:shadow-xl  hover:shadow-[#0706F1]/20 hover:-translate-y-2 sm:rounded-3xl sm:p-8 md:p-10"
             >
               {/* Animated gradient background */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
@@ -374,7 +374,7 @@ const AwardsSection = () => {
             <motion.div
               key={item.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-[#0706F1]/20 bg-gradient-to-br from-card via-primary/[0.03] to-card p-6 transition-all duration-500 hover:border-[#0706F1]/40 hover:shadow-2xl hover:shadow-[#0706F1]/20 hover:-translate-y-2 sm:rounded-3xl sm:p-8 md:p-10"
+              className="group relative overflow-hidden rounded-2xl border border-[#0706F1]/20 bg-gradient-to-br from-card via-primary/[0.03] to-card p-6 transition-all duration-500 hover:border-[#0706F1]/40 hover:shadow-xl  hover:shadow-[#0706F1]/20 hover:-translate-y-2 sm:rounded-3xl sm:p-8 md:p-10"
             >
               {/* Decorative corner accent */}
               <div className="absolute right-0 top-0 h-20 w-20 bg-gradient-to-bl from-primary/10 to-transparent" />

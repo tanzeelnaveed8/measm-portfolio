@@ -159,7 +159,7 @@ const TestimonialsSection = () => {
                           <Star
                             key={j}
                             size={12}
-                            className="fill-primary text-primary sm:h-3.5 sm:w-3.5"
+                            className="fill-amber-500  outline-amber-500 sm:h-3.5 sm:w-3.5"
                           />
                         ))}
                       </div>
@@ -248,7 +248,7 @@ const TestimonialsSection = () => {
 
                 <div className="mt-3 flex gap-0.5">
                   {Array.from({ length: t.rating }).map((_, j) => (
-                    <Star key={j} size={12} className="fill-primary text-primary" />
+                    <Star key={j} size={12} className="fill-amber-500 " />
                   ))}
                 </div>
               </div>

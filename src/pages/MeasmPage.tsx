@@ -31,7 +31,7 @@ const MeasmPage = () => {
         >
           {/* Giant MEASM heading */}
           <h1 className="mb-8 text-[15vw] font-black uppercase leading-none tracking-tighter text-black sm:text-[12vw] md:text-[10vw]">
-            Measm<span className="text-white">.</span>
+            Measm<span className="text-primary">.</span>
           </h1>
 
           {/* Subtitle */}

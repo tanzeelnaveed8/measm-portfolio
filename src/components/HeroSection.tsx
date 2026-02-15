@@ -83,7 +83,7 @@ const HeroSection = () => {
               asChild
               size="lg"
               className="w-full sm:w-auto rounded-full px-8 text-base font-semibold 
-             bg-[#0706F1] text-white 
+             bg-[#0706F1] text-primary 
              hover:bg-[#0505c7] 
              transition-all duration-300 
              hover:shadow-lg hover:shadow-[#0706F1]/40"
@@ -99,8 +99,8 @@ const HeroSection = () => {
               variant="outline"
               size="lg"
               className="w-full sm:w-auto rounded-full px-8 text-base font-semibold
-             border-[#0706F1] text-white
-             hover:bg-[#0706F1] hover:text-white
+             border-[#0706F1] text-primary
+             hover:bg-[#0706F1] hover:text-primary
              transition-all duration-300"
             >
               <a href="#contact">

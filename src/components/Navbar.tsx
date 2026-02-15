@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Work", href: "#work" },
   { label: "Impact", href: "#impact" },
   { label: "Awards", href: "#awards" },
-  { label: "Academic Portfolio", href: "#academic-portfolio" },
+  { label: "Academics", href: "#academic-portfolio" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
@@ -69,7 +69,7 @@ const Navbar = () => {
     >
       <div
         className={`relative w-full max-w-6xl overflow-hidden rounded-2xl border transition-all duration-500 ${scrolled
-          ? "border-border/60 bg-background/95 shadow-xl shadow-black/20"
+          ? "border-border/40 bg-background/95 shadow-xl shadow-black/20"
           : "border-border bg-background/80 shadow-lg shadow-black/10"
           } backdrop-blur-xl`}
       >
@@ -84,9 +84,9 @@ const Navbar = () => {
               className="group relative text-xl font-black tracking-tight text-foreground sm:text-2xl"
             >
               Measm
-              <span className="text-primary transition-all duration-300 group-hover:text-foreground">
+              {/* <span className="text-primary transition-all duration-300 group-hover:text-foreground">
                 .
-              </span>
+              </span> */}
               <div className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#0706F1] transition-all duration-300 group-hover:w-full" />
             </a>
 
@@ -116,16 +116,22 @@ const Navbar = () => {
                 </a>
               ))}
 
-              <Button
-                asChild
-                size="sm"
-                className="ml-2 md:hidden lg:block rounded-full px-5 font-bold uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-[#0706F1]/30"
+              <button
+                className="ml-2 md:hidden lg:block rounded-full px-5 font-bold uppercase tracking-wider transition-all duration-300 hover:shadow-lg bg-primary hover:shadow-[#0706F1]/30"
               >
-                <a href="#contact" onClick={(e) => handleNavClick(e, "#contact")} className="flex items-center gap-1.5 text-primary">
-                  Get in Touch
-                  <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
+                <a
+                  href="#contact"
+                  onClick={(e) => handleNavClick(e, "#contact")}
+                  className="flex items-center justify-center gap-2 text-sm  p-2 px-3 rounded-2xl text-primary w-[100%]"
+                >
+                  <span>Get in Touch</span>
+                  <ArrowRight
+                    size={14}
+                    className="transition-transform group-hover:translate-x-0.5"
+                  />
                 </a>
-              </Button>
+              </button>
+
             </div>
 
             {/* Mobile toggle */}

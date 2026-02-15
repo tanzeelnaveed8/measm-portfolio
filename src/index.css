@@ -76,7 +76,7 @@
 
     /* Colors */
 
-   --border: #0706F1;
+   --border: #3B5BFF;
    --primary: #F8FAFC;
    --bg-page: #0B0B0B;
 --bg-surface: #0B0B0B;
@@ -94,6 +94,7 @@
 --text-inverse: #FFFFFF;
 
 --accent-primary: #0706F1;
+--accent-secondary :#3B5BFF;
 --accent-hover: #0505c7;
 --accent-active: #04049e;
 --accent-muted: rgba(7, 6, 241, 0.15);
@@ -102,7 +103,7 @@
 --bg-accent : #0505c7;
 --focus-ring: #0706F1;
 --focus:#0706F1;
---border: #0706F1;
+--border: #3B5BFF;
 --text-primary:#F8FAFC;
   }
 }
@@ -151,10 +152,15 @@ section {
 .shadow-primary {
   box-shadow: 0 4px 10px #0706F1;
 }
-.border-primary , .border{
+.border-primary{
   border-color: #0706F1;
 }
-
+.bg-page{
+  background-color: #0B0B0B;
+}
+.border{
+  border-color: #0a1e41;
+}
 /* Selected date background */
 .rdp-day_selected,
 .rdp-day_selected:focus,

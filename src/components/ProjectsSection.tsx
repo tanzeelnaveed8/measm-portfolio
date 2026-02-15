@@ -471,7 +471,7 @@
 //             <motion.li key={project.title} variants={itemVariants}>
 //               <article
 //                 onClick={() => setSelectedProject(project)}
-//                 className="group relative h-[350px] cursor-pointer overflow-hidden rounded-[2rem] border border-border bg-card shadow-sm transition-all duration-700 hover:shadow-2xl hover:shadow-[#0706F1]/20 sm:h-[400px] lg:h-[550px]"
+//                 className="group relative h-[350px] cursor-pointer overflow-hidden rounded-[2rem] border border-border bg-card shadow-sm transition-all duration-700 hover:shadow-xl  hover:shadow-[#0706F1]/20 sm:h-[400px] lg:h-[550px]"
 //               >
 //                 <img
 //                   src={project.image}
@@ -1081,7 +1081,7 @@ const itemVariants = {
 const ProjectCard = ({ project, onClick }: { project: Project; onClick: () => void }) => (
   <article
     onClick={onClick}
-    className="group relative h-[350px] cursor-pointer overflow-hidden rounded-[2rem] border border-border bg-card shadow-sm transition-all duration-700 hover:shadow-2xl hover:shadow-[#0706F1]/20 sm:h-[400px] lg:h-[550px]"
+    className="group relative h-[350px] cursor-pointer overflow-hidden rounded-[2rem] border border-border bg-card shadow-sm transition-all duration-700 hover:shadow-xl  hover:shadow-[#0706F1]/20 sm:h-[400px] lg:h-[550px]"
   >
     <img
       src={project.image}
