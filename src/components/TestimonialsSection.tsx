@@ -96,7 +96,7 @@ const TestimonialsSection = () => {
           className="mb-12 max-w-2xl space-y-4 sm:mb-16 sm:space-y-6"
         >
           <div className="flex items-center gap-4">
-            <span className="h-[2px] w-12 bg-primary" />
+            <span className="h-[2px] w-12 bg-[#0706F1]"></span>
             <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">
               Testimonials
             </span>
@@ -119,9 +119,9 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.7 }}
           className="mb-12 sm:mb-16"
         >
-          <div className="group relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-card via-card to-primary/[0.03] transition-all duration-500 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:rounded-[1.5rem]">
-            <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/10 sm:-right-12 sm:-top-12 sm:h-40 sm:w-40" />
-            <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-primary/5 blur-3xl sm:-bottom-8 sm:-left-8 sm:h-32 sm:w-32" />
+          <div className="group relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-card via-card to-primary/[0.03] transition-all duration-500 hover:border-[#0706F1]/30 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:rounded-[1.5rem]">
+            <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-[#0706F1]/5 blur-3xl transition-all duration-700 group-hover:bg-[#0706F1]/10 sm:-right-12 sm:-top-12 sm:h-40 sm:w-40" />
+            <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-[#0706F1]/5 blur-3xl sm:-bottom-8 sm:-left-8 sm:h-32 sm:w-32" />
 
             <div className="relative p-6 sm:p-8 md:p-10 lg:p-14">
               <Quote
@@ -145,7 +145,7 @@ const TestimonialsSection = () => {
                     <img
                       src={featured.image}
                       alt={featured.name}
-                      className="h-12 w-12 rounded-full border-2 border-primary/30 object-cover sm:h-14 sm:w-14 md:h-16 md:w-16"
+                      className="h-12 w-12 rounded-full border-2 border-[#0706F1]/30 object-cover sm:h-14 sm:w-14 md:h-16 md:w-16"
                     />
                     <div>
                       <p className="text-sm font-bold text-foreground sm:text-base md:text-lg">
@@ -172,13 +172,13 @@ const TestimonialsSection = () => {
               <div className="mt-6 flex items-center gap-2 sm:mt-8 sm:gap-3">
                 <button
                   onClick={prev}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-muted-foreground transition-all duration-300 hover:border-primary/40 hover:text-primary sm:h-10 sm:w-10 md:h-12 md:w-12"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-muted-foreground transition-all duration-300 hover:border-[#0706F1]/40 hover:text-primary sm:h-10 sm:w-10 md:h-12 md:w-12"
                 >
                   <ChevronLeft size={16} className="sm:h-5 sm:w-5" />
                 </button>
                 <button
                   onClick={next}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-muted-foreground transition-all duration-300 hover:border-primary/40 hover:text-primary sm:h-10 sm:w-10 md:h-12 md:w-12"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-muted-foreground transition-all duration-300 hover:border-[#0706F1]/40 hover:text-primary sm:h-10 sm:w-10 md:h-12 md:w-12"
                 >
                   <ChevronRight size={16} className="sm:h-5 sm:w-5" />
                 </button>
@@ -218,13 +218,12 @@ const TestimonialsSection = () => {
               key={i}
               variants={fadeUp}
               onClick={() => setActive(i)}
-              className={`group relative cursor-pointer overflow-hidden rounded-2xl border bg-card p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5 sm:p-7 ${
-                active === i
-                  ? "border-primary/40 shadow-lg shadow-primary/10"
-                  : "border-border hover:border-primary/30"
-              }`}
+              className={`group relative cursor-pointer overflow-hidden rounded-2xl border bg-card p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:p-7 ${active === i
+                ? "border-[#0706F1]/40 shadow-lg shadow-[#0706F1]/10"
+                : "border-border hover:border-[#0706F1]/30"
+                }`}
             >
-              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-primary/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-primary/10" />
+              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-[#0706F1]/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-[#0706F1]/10" />
 
               <div className="relative">
                 <Quote size={20} className="mb-3 text-primary/20" />
@@ -237,7 +236,7 @@ const TestimonialsSection = () => {
                   <img
                     src={t.image}
                     alt={t.name}
-                    className="h-10 w-10 rounded-full border border-primary/20 object-cover"
+                    className="h-10 w-10 rounded-full border border-[#0706F1]/20 object-cover"
                   />
                   <div>
                     <p className="text-sm font-bold text-foreground">{t.name}</p>

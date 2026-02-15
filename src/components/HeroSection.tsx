@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import "./../index.css"
 
 const HeroSection = () => {
   return (
@@ -17,7 +18,7 @@ const HeroSection = () => {
           <img
             src="/mesam.webp"
             alt="Muhammad Measm Raza"
-            className="h-[340px] w-[340px] rounded-full border-4 border-primary/30 object-cover shadow-2xl sm:h-[360px] sm:w-[360px] md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px]"
+            className="h-[310px] w-[310px] mt-10 lg:mt-0 rounded-full border-4 border-[#0706F1]/30 object-cover shadow-2xl sm:h-[360px] sm:w-[360px] md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px]"
           />
         </motion.div>
 
@@ -76,16 +77,37 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55 }}
-            className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start"
+            className="flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start"
           >
-            <Button asChild size="lg" className="w-full rounded-full px-8 text-base font-semibold sm:w-auto">
-              <a href="#work">
-                Explore the Work <ArrowRight size={18} className="ml-1" />
+            <Button
+              asChild
+              size="lg"
+              className="w-full sm:w-auto rounded-full px-8 text-base font-semibold 
+             bg-[#0706F1] text-white 
+             hover:bg-[#0505c7] 
+             transition-all duration-300 
+             hover:shadow-lg hover:shadow-[#0706F1]/40"
+            >
+              <a href="#work" className="flex items-center">
+                Explore the Work
+                <ArrowRight size={18} className="ml-2 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="w-full rounded-full px-8 text-base font-semibold sm:w-auto">
-              <a href="#contact">Contact Founder</a>
+
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="w-full sm:w-auto rounded-full px-8 text-base font-semibold
+             border-[#0706F1] text-white
+             hover:bg-[#0706F1] hover:text-white
+             transition-all duration-300"
+            >
+              <a href="#contact">
+                Contact Founder
+              </a>
             </Button>
+
           </motion.div>
         </div>
       </div>

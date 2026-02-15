@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const MeasmPage = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#FFD700] px-4 py-12 sm:px-6">
+    <div className="relative min-h-screen overflow-hidden bg-[#0706F1] px-4 py-12 sm:px-6">
       {/* Back button */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}
@@ -14,7 +14,7 @@ const MeasmPage = () => {
       >
         <Link
           to="/"
-          className="flex items-center gap-2 rounded-full border-2 border-black/10 bg-black/5 px-4 py-2 text-sm font-bold uppercase tracking-wider text-black transition-all duration-300 hover:border-black/30 hover:bg-black/10"
+          className="flex items-center gap-2 rounded-full border-2 border-black/10 bg-[#0B0B0B]/5 px-4 py-2 text-sm font-bold uppercase tracking-wider text-black transition-all duration-300 hover:border-black/30 hover:bg-[#0B0B0B]/10"
         >
           <ArrowLeft size={16} />
           Back
@@ -52,9 +52,9 @@ const MeasmPage = () => {
             className="mt-12 flex flex-wrap items-center justify-center gap-4 text-sm font-bold uppercase tracking-widest text-black/60"
           >
             <span>Operating Globally</span>
-            <span className="h-1 w-1 rounded-full bg-black/60" />
+            <span className="h-1 w-1 rounded-full bg-[#0B0B0B]/60" />
             <span>Remote-First</span>
-            <span className="h-1 w-1 rounded-full bg-black/60" />
+            <span className="h-1 w-1 rounded-full bg-[#0B0B0B]/60" />
             <span>Founder-Led</span>
           </motion.div>
         </motion.div>

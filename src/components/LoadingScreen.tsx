@@ -31,8 +31,8 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
       className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-background px-4"
     >
       {/* Animated background elements */}
-      <div className="absolute left-1/4 top-1/4 h-64 w-64 rounded-full bg-primary/5 blur-3xl sm:h-96 sm:w-96" />
-      <div className="absolute bottom-1/4 right-1/4 h-64 w-64 rounded-full bg-primary/5 blur-3xl sm:h-96 sm:w-96" />
+      <div className="absolute left-1/4 top-1/4 h-64 w-64 rounded-full bg-[#0706F1]/5 blur-3xl sm:h-96 sm:w-96" />
+      <div className="absolute bottom-1/4 right-1/4 h-64 w-64 rounded-full bg-[#0706F1]/5 blur-3xl sm:h-96 sm:w-96" />
 
       {/* Main content */}
       <div className="relative z-10 w-full text-center">
@@ -83,7 +83,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
           </div>
           <div className="h-1 w-full overflow-hidden rounded-full bg-border">
             <motion.div
-              className="h-full bg-primary"
+              className="h-full bg-[#0706F1]"
               initial={{ width: "0%" }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.3 }}
@@ -112,7 +112,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
         {[0, 1, 2].map((i) => (
           <motion.div
             key={i}
-            className="h-2 w-2 rounded-full bg-primary"
+            className="h-2 w-2 rounded-full bg-[#0706F1]"
             animate={{
               scale: [1, 1.5, 1],
               opacity: [0.5, 1, 0.5],

@@ -3,6 +3,35 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  color-scheme: dark;
+--bg-page: #0B0B0B;
+--bg-surface: #0B0B0B;
+--bg-card: #1E293B;
+--bg-subtle: #111827;
+
+--border-default: #1E293B;
+--border-subtle: #1E293B;
+--border-strong: #334155;
+
+--text-primary: #F8FAFC;
+--text-body: #E2E8F0;
+--text-muted: #94A3B8;
+--text-disabled: #64748B;
+--text-inverse: #FFFFFF;
+
+--accent-primary: #0706F1;
+--accent-hover: #0505c7;
+--accent-active: #04049e;
+--accent-muted: rgba(7, 6, 241, 0.15);
+
+--accent-secondary: #1E293B;
+
+/* --focus-ring: #0706F1; */
+
+--border: #0706F1;
+
+}
 
 @layer base {
   :root {
@@ -44,6 +73,37 @@
     --sidebar-accent-foreground: 0 0% 95%;
     --sidebar-border: 0 0% 18%;
     --sidebar-ring: 45 100% 58%;
+
+    /* Colors */
+
+   --border: #0706F1;
+   --primary: #F8FAFC;
+   --bg-page: #0B0B0B;
+--bg-surface: #0B0B0B;
+--bg-card: #1E293B;
+--bg-subtle: #111827;
+
+--border-default: #1E293B;
+--border-subtle: #1E293B;
+--border-strong: #334155;
+
+--text-primary: #F8FAFC;
+--text-body: #E2E8F0;
+--text-muted: #94A3B8;
+--text-disabled: #64748B;
+--text-inverse: #FFFFFF;
+
+--accent-primary: #0706F1;
+--accent-hover: #0505c7;
+--accent-active: #04049e;
+--accent-muted: rgba(7, 6, 241, 0.15);
+
+--accent-secondary: #1E293B;
+--bg-accent : #0505c7;
+--focus-ring: #0706F1;
+--focus:#0706F1;
+--border: #0706F1;
+--text-primary:#F8FAFC;
   }
 }
 
@@ -79,4 +139,31 @@ section {
   section {
     scroll-margin-top: 160px;
   }
+}
+
+.bg-primary{
+  background-color: #0706F1;
+  color: #F8FAFC;
+}
+.text-primary{
+  color: #F8FAFC;
+} 
+.shadow-primary {
+  box-shadow: 0 4px 10px #0706F1;
+}
+.border-primary , .border{
+  border-color: #0706F1;
+}
+
+/* Selected date background */
+.rdp-day_selected,
+.rdp-day_selected:focus,
+.rdp-day_selected:hover {
+  background-color: #0706F1 !important;
+  color: #F8FAFC !important;
+}
+
+/* Today highlight (optional) */
+.rdp-day_today {
+  border: 1px solid #0706F1 !important;
 }

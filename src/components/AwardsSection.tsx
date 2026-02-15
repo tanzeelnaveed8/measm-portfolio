@@ -140,8 +140,8 @@ const AwardsSection = () => {
   return (
     <section id="awards" className="relative overflow-hidden bg-gradient-to-b from-background via-primary/[0.02] to-background px-4 py-16 sm:px-6 sm:py-20 md:py-28 lg:py-32">
       {/* Decorative background elements */}
-      <div className="absolute left-0 top-1/4 h-96 w-96 rounded-full bg-primary/5 blur-[120px]" />
-      <div className="absolute right-0 bottom-1/4 h-96 w-96 rounded-full bg-primary/5 blur-[120px]" />
+      <div className="absolute left-0 top-1/4 h-96 w-96 rounded-full bg-[#0706F1]/5 blur-[120px]" />
+      <div className="absolute right-0 bottom-1/4 h-96 w-96 rounded-full bg-[#0706F1]/5 blur-[120px]" />
 
       <div className="relative mx-auto max-w-6xl">
         {/* Header */}
@@ -152,7 +152,7 @@ const AwardsSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-10 max-w-3xl space-y-3 sm:mb-12 sm:space-y-4 md:mb-16 md:space-y-6"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1.5 backdrop-blur-sm sm:gap-3 sm:px-4 sm:py-2">
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#0706F1]/20 bg-[#0706F1]/5 px-3 py-1.5 backdrop-blur-sm sm:gap-3 sm:px-4 sm:py-2">
             <Trophy size={14} className="text-primary sm:h-4 sm:w-4" />
             <span className="text-[10px] font-black uppercase tracking-[0.25em] text-primary sm:text-xs sm:tracking-[0.3em]">
               Awards & Global Recognitions
@@ -194,24 +194,24 @@ const AwardsSection = () => {
             <motion.div
               key={item.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/[0.08] via-card to-card p-6 transition-all duration-500 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 sm:rounded-3xl sm:p-8 md:p-10"
+              className="group relative overflow-hidden rounded-2xl border border-[#0706F1]/20 bg-gradient-to-br from-primary/[0.08] via-card to-card p-6 transition-all duration-500 hover:border-[#0706F1]/40 hover:shadow-2xl hover:shadow-[#0706F1]/20 hover:-translate-y-2 sm:rounded-3xl sm:p-8 md:p-10"
             >
               {/* Animated gradient background */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
               {/* Glow effect */}
-              <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-primary/20 blur-3xl transition-all duration-700 group-hover:bg-primary/30" />
+              <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-[#0706F1]/20 blur-3xl transition-all duration-700 group-hover:bg-[#0706F1]/30" />
 
               {/* Number badge */}
-              <div className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-xs font-black text-primary ring-2 ring-primary/20 sm:right-6 sm:top-6 sm:h-10 sm:w-10 sm:text-sm">
+              <div className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#0706F1]/10 text-xs font-black text-primary ring-2 ring-primary/20 sm:right-6 sm:top-6 sm:h-10 sm:w-10 sm:text-sm">
                 {index + 1}
               </div>
 
               <div className="relative">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 text-primary ring-2 ring-primary/30 transition-all duration-300 group-hover:scale-110 group-hover:ring-primary/50 sm:mb-6 sm:h-16 sm:w-16 sm:rounded-2xl">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#0706F1]/20 to-[#0706F1]/5 text-primary ring-2 ring-primary/30 transition-all duration-300 group-hover:scale-110 group-hover:ring-primary/50 sm:mb-6 sm:h-16 sm:w-16 sm:rounded-2xl">
                   {item.icon}
                 </div>
-                <span className="mb-3 inline-block rounded-full bg-primary/15 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary ring-1 ring-primary/20 sm:mb-4 sm:px-4 sm:py-1 sm:text-[11px]">
+                <span className="mb-3 inline-block rounded-full bg-[#0706F1]/15 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary ring-1 ring-primary/20 sm:mb-4 sm:px-4 sm:py-1 sm:text-[11px]">
                   {item.tag}
                 </span>
                 <h4 className="mb-2 text-lg font-black uppercase leading-tight tracking-tight text-foreground sm:mb-3 sm:text-xl md:text-2xl">
@@ -234,7 +234,7 @@ const AwardsSection = () => {
           className="mb-6 sm:mb-8 md:mb-10"
         >
           <div className="flex items-center gap-2 sm:gap-3">
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary/10 text-xs font-black text-primary ring-1 ring-primary/20 sm:h-8 sm:w-8">
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#0706F1]/10 text-xs font-black text-primary ring-1 ring-primary/20 sm:h-8 sm:w-8">
               02
             </span>
             <div>
@@ -259,14 +259,14 @@ const AwardsSection = () => {
             <motion.div
               key={item.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card p-5 transition-all duration-500 hover:border-primary/40 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 sm:rounded-2xl sm:p-6"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card p-5 transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#0706F1]/10 sm:rounded-2xl sm:p-6"
             >
               {/* Gradient line on top */}
               <div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-primary/60 via-primary/30 to-transparent" />
 
-              <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-primary/5 blur-2xl transition-all duration-500 group-hover:h-32 group-hover:w-32 group-hover:bg-primary/10" />
+              <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-[#0706F1]/5 blur-2xl transition-all duration-500 group-hover:h-32 group-hover:w-32 group-hover:bg-[#0706F1]/10" />
               <div className="relative">
-                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary/15 to-primary/5 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:scale-110 group-hover:ring-primary/40 sm:mb-4 sm:h-12 sm:w-12 sm:rounded-xl">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-[#0706F1]/15 to-[#0706F1]/5 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:scale-110 group-hover:ring-primary/40 sm:mb-4 sm:h-12 sm:w-12 sm:rounded-xl">
                   {item.icon}
                 </div>
                 <h4 className="mb-1.5 text-sm font-bold leading-tight text-foreground transition-colors group-hover:text-primary sm:mb-2 sm:text-base">
@@ -289,7 +289,7 @@ const AwardsSection = () => {
           className="mb-6 sm:mb-8 md:mb-10"
         >
           <div className="flex items-center gap-2 sm:gap-3">
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary/10 text-xs font-black text-primary ring-1 ring-primary/20 sm:h-8 sm:w-8">
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#0706F1]/10 text-xs font-black text-primary ring-1 ring-primary/20 sm:h-8 sm:w-8">
               03
             </span>
             <div>
@@ -312,17 +312,17 @@ const AwardsSection = () => {
             <motion.div
               key={item.title + item.organization}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-xl border border-border bg-gradient-to-br from-card to-primary/[0.02] transition-all duration-500 hover:border-primary/40 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 sm:rounded-2xl"
+              className="group relative overflow-hidden rounded-xl border border-border bg-gradient-to-br from-card to-primary/[0.02] transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#0706F1]/10 sm:rounded-2xl"
             >
               {/* Top gradient bar */}
               <div className="h-1.5 w-full bg-gradient-to-r from-primary via-primary/60 to-primary/20" />
 
               <div className="p-5 sm:p-6 md:p-7">
                 <div className="mb-3 flex items-start justify-between gap-2 sm:mb-4 sm:gap-3">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary/15 to-primary/5 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:scale-110 group-hover:ring-primary/40 sm:h-11 sm:w-11 sm:rounded-xl">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-[#0706F1]/15 to-[#0706F1]/5 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:scale-110 group-hover:ring-primary/40 sm:h-11 sm:w-11 sm:rounded-xl">
                     {item.icon}
                   </div>
-                  <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-widest text-primary ring-1 ring-primary/20 sm:px-3 sm:py-1 sm:text-[10px]">
+                  <span className="rounded-full bg-[#0706F1]/10 px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-widest text-primary ring-1 ring-primary/20 sm:px-3 sm:py-1 sm:text-[10px]">
                     {item.organization}
                   </span>
                 </div>
@@ -335,7 +335,7 @@ const AwardsSection = () => {
               </div>
 
               {/* Bottom glow */}
-              <div className="absolute -bottom-8 -right-8 h-24 w-24 rounded-full bg-primary/5 blur-2xl transition-all duration-500 group-hover:bg-primary/10" />
+              <div className="absolute -bottom-8 -right-8 h-24 w-24 rounded-full bg-[#0706F1]/5 blur-2xl transition-all duration-500 group-hover:bg-[#0706F1]/10" />
             </motion.div>
           ))}
         </motion.div>
@@ -349,7 +349,7 @@ const AwardsSection = () => {
           className="mb-6 sm:mb-8 md:mb-10"
         >
           <div className="flex items-center gap-2 sm:gap-3">
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary/10 text-xs font-black text-primary ring-1 ring-primary/20 sm:h-8 sm:w-8">
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#0706F1]/10 text-xs font-black text-primary ring-1 ring-primary/20 sm:h-8 sm:w-8">
               04
             </span>
             <div>
@@ -374,16 +374,16 @@ const AwardsSection = () => {
             <motion.div
               key={item.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-card via-primary/[0.03] to-card p-6 transition-all duration-500 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 sm:rounded-3xl sm:p-8 md:p-10"
+              className="group relative overflow-hidden rounded-2xl border border-[#0706F1]/20 bg-gradient-to-br from-card via-primary/[0.03] to-card p-6 transition-all duration-500 hover:border-[#0706F1]/40 hover:shadow-2xl hover:shadow-[#0706F1]/20 hover:-translate-y-2 sm:rounded-3xl sm:p-8 md:p-10"
             >
               {/* Decorative corner accent */}
               <div className="absolute right-0 top-0 h-20 w-20 bg-gradient-to-bl from-primary/10 to-transparent" />
 
               {/* Glow effect */}
-              <div className="absolute -left-12 -bottom-12 h-40 w-40 rounded-full bg-primary/20 blur-3xl transition-all duration-700 group-hover:bg-primary/30" />
+              <div className="absolute -left-12 -bottom-12 h-40 w-40 rounded-full bg-[#0706F1]/20 blur-3xl transition-all duration-700 group-hover:bg-[#0706F1]/30" />
 
               <div className="relative">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 text-primary ring-2 ring-primary/30 transition-all duration-300 group-hover:scale-110 group-hover:ring-primary/50 sm:mb-6 sm:h-16 sm:w-16 sm:rounded-2xl">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#0706F1]/20 to-[#0706F1]/5 text-primary ring-2 ring-primary/30 transition-all duration-300 group-hover:scale-110 group-hover:ring-primary/50 sm:mb-6 sm:h-16 sm:w-16 sm:rounded-2xl">
                   {item.icon}
                 </div>
                 <h4 className="mb-2 text-lg font-black uppercase leading-tight tracking-tight text-foreground sm:mb-3 sm:text-xl md:text-2xl">

@@ -145,7 +145,7 @@ const ResumeSection = () => {
         >
           <div className="max-w-2xl space-y-6">
             <div className="flex items-center gap-4">
-              <span className="h-[2px] w-12 bg-primary" />
+              <span className="h-[2px] w-12 bg-[#0706F1]" />
               <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">
                 Professional Journey
               </span>
@@ -158,7 +158,7 @@ const ResumeSection = () => {
             </p>
           </div>
 
-          <button className="group flex items-center gap-2 rounded-full border border-primary bg-primary px-6 py-3 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30">
+          <button className="group flex items-center gap-2 rounded-full border border-[#0706F1] bg-[#0706F1] px-6 py-3 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-all duration-300 hover:bg-[#0706F1]/90 hover:shadow-lg hover:shadow-[#0706F1]/30">
             <Download size={16} />
             Download CV
           </button>
@@ -191,9 +191,9 @@ const ResumeSection = () => {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:border-[#0706F1]/30 hover:shadow-xl hover:shadow-[#0706F1]/5"
             >
-              <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-primary/5 blur-2xl transition-all duration-700 group-hover:bg-primary/10" />
+              <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-[#0706F1]/5 blur-2xl transition-all duration-700 group-hover:bg-[#0706F1]/10" />
 
               <div className="relative p-6 sm:p-8">
                 <div className="mb-4 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
@@ -224,7 +224,7 @@ const ResumeSection = () => {
                 <div className="space-y-2">
                   {exp.achievements.map((achievement, j) => (
                     <div key={j} className="flex items-start gap-2">
-                      <div className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                      <div className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#0706F1]" />
                       <p className="text-xs leading-relaxed text-muted-foreground sm:text-sm">
                         {achievement}
                       </p>
@@ -263,15 +263,15 @@ const ResumeSection = () => {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-500 hover:border-primary/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0706F1]/5"
             >
-              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-primary/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-primary/10" />
+              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-[#0706F1]/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-[#0706F1]/10" />
 
               <div className="relative">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/40">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0706F1]/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-[#0706F1]/15 group-hover:ring-primary/40">
                   <GraduationCap size={20} />
                 </div>
-                <span className="mb-2 inline-block rounded-full bg-primary/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+                <span className="mb-2 inline-block rounded-full bg-[#0706F1]/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
                   {edu.type}
                 </span>
                 <h4 className="mb-1 text-base font-bold text-foreground sm:text-lg">
@@ -309,12 +309,12 @@ const ResumeSection = () => {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-500 hover:border-primary/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0706F1]/5"
             >
-              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-primary/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-primary/10" />
+              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-[#0706F1]/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-[#0706F1]/10" />
 
               <div className="relative">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/40">
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-[#0706F1]/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-[#0706F1]/15 group-hover:ring-primary/40">
                   {skill.icon}
                 </div>
                 <h4 className="mb-3 text-base font-bold text-foreground">{skill.category}</h4>
@@ -356,9 +356,9 @@ const ResumeSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="flex items-center gap-3 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:border-primary/30"
+                  className="flex items-center gap-3 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:border-[#0706F1]/30"
                 >
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#0706F1]/10 text-primary">
                     <Award size={16} />
                   </div>
                   <p className="text-sm text-foreground">{cert}</p>
@@ -391,15 +391,15 @@ const ResumeSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="flex items-center justify-between rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:border-primary/30"
+                  className="flex items-center justify-between rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:border-[#0706F1]/30"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#0706F1]/10 text-primary">
                       <Globe size={16} />
                     </div>
                     <p className="text-sm font-medium text-foreground">{lang.name}</p>
                   </div>
-                  <span className="rounded-full bg-primary/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+                  <span className="rounded-full bg-[#0706F1]/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
                     {lang.level}
                   </span>
                 </motion.div>

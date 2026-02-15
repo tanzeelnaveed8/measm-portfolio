@@ -44,7 +44,7 @@ const BlogSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="group cursor-pointer rounded-2xl border border-border bg-card p-8 transition-all hover:border-primary/40"
+              className="group cursor-pointer rounded-2xl border border-border bg-card p-8 transition-all hover:border-[#0706F1]/40"
             >
               <div className="mb-4 flex items-center gap-2 text-xs text-muted-foreground">
                 <Calendar size={14} />

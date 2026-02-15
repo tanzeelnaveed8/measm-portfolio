@@ -28,8 +28,8 @@ const Footer = () => {
     <footer className="relative overflow-hidden border-t border-border bg-card/30 px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:py-24">
       <div className="relative mx-auto max-w-6xl">
         {/* Glow effects */}
-        <div className="absolute -left-20 top-0 h-32 w-32 rounded-full bg-primary/5 blur-3xl sm:h-40 sm:w-40" />
-        <div className="absolute -right-20 bottom-0 h-32 w-32 rounded-full bg-primary/5 blur-3xl sm:h-40 sm:w-40" />
+        <div className="absolute -left-20 top-0 h-32 w-32 rounded-full bg-[#0706F1]/5 blur-3xl sm:h-40 sm:w-40" />
+        <div className="absolute -right-20 bottom-0 h-32 w-32 rounded-full bg-[#0706F1]/5 blur-3xl sm:h-40 sm:w-40" />
 
         {/* Main footer content */}
         <div className="relative mb-12 grid gap-8 sm:mb-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
@@ -46,7 +46,7 @@ const Footer = () => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card text-muted-foreground transition-all duration-300 hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card text-muted-foreground transition-all duration-300 hover:border-[#0706F1]/40 hover:bg-[#0706F1]/10 hover:text-primary"
                 >
                   {link.icon}
                 </a>
@@ -101,7 +101,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div>
+          {/* <div>
             <h4 className="mb-4 text-xs font-bold uppercase tracking-widest text-primary">
               Stay Updated
             </h4>
@@ -112,13 +112,13 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex-1 rounded-lg border border-border bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary/40 focus:outline-none focus:ring-1 focus:ring-primary/40"
+                className="flex-1 rounded-lg border border-border bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-[#0706F1]/40 focus:outline-none focus:ring-1 focus:ring-primary/40"
               />
-              <button className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30">
+              <button className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#0706F1] text-primary-foreground transition-all duration-300 hover:bg-[#0706F1]/90 hover:shadow-lg hover:shadow-[#0706F1]/30">
                 <Send size={16} />
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Divider */}

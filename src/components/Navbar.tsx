@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Work", href: "#work" },
   { label: "Impact", href: "#impact" },
   { label: "Awards", href: "#awards" },
+  { label: "Academic Portfolio", href: "#academic-portfolio" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
@@ -67,14 +68,13 @@ const Navbar = () => {
       className="fixed left-0 right-0 top-0 z-50 flex justify-center px-4 pt-4"
     >
       <div
-        className={`relative w-full max-w-5xl overflow-hidden rounded-2xl border transition-all duration-500 ${
-          scrolled
-            ? "border-border/60 bg-background/95 shadow-xl shadow-black/20"
-            : "border-border bg-background/80 shadow-lg shadow-black/10"
-        } backdrop-blur-xl`}
+        className={`relative w-full max-w-6xl overflow-hidden rounded-2xl border transition-all duration-500 ${scrolled
+          ? "border-border/60 bg-background/95 shadow-xl shadow-black/20"
+          : "border-border bg-background/80 shadow-lg shadow-black/10"
+          } backdrop-blur-xl`}
       >
         {/* Glow effect */}
-        <div className="absolute -top-20 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl transition-opacity duration-500" />
+        <div className="absolute -top-20 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-[#0706F1]/10 blur-3xl transition-opacity duration-500" />
 
         <div className="relative px-5 py-3.5 sm:px-6 sm:py-4">
           <div className="flex items-center justify-between">
@@ -87,7 +87,7 @@ const Navbar = () => {
               <span className="text-primary transition-all duration-300 group-hover:text-foreground">
                 .
               </span>
-              <div className="absolute -bottom-1 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full" />
+              <div className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#0706F1] transition-all duration-300 group-hover:w-full" />
             </a>
 
             {/* Desktop Navigation */}
@@ -97,22 +97,21 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className={`group relative px-4 py-2 text-sm font-medium transition-colors ${
-                    activeSection === link.href
-                      ? "text-primary"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
+                  className={`group relative px-4 py-2 text-sm font-medium transition-colors ${activeSection === link.href
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-foreground"
+                    }`}
                 >
                   {link.label}
                   {activeSection === link.href && (
                     <motion.div
                       layoutId="activeSection"
-                      className="absolute bottom-0 left-0 right-0 h-[2px] bg-primary"
+                      className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#0706F1]"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
                   {activeSection !== link.href && (
-                    <div className="absolute bottom-0 left-0 right-0 h-[2px] w-0 bg-primary/50 transition-all duration-300 group-hover:w-full" />
+                    <div className="absolute bottom-0 left-0 right-0 h-[2px] w-0 bg-[#0706F1]/50 transition-all duration-300 group-hover:w-full" />
                   )}
                 </a>
               ))}
@@ -120,9 +119,9 @@ const Navbar = () => {
               <Button
                 asChild
                 size="sm"
-                className="ml-2 rounded-full px-5 font-bold uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-primary/30"
+                className="ml-2 md:hidden lg:block rounded-full px-5 font-bold uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-[#0706F1]/30"
               >
-                <a href="#contact" onClick={(e) => handleNavClick(e, "#contact")} className="flex items-center gap-1.5">
+                <a href="#contact" onClick={(e) => handleNavClick(e, "#contact")} className="flex items-center gap-1.5 text-primary">
                   Get in Touch
                   <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
                 </a>
@@ -131,7 +130,7 @@ const Navbar = () => {
 
             {/* Mobile toggle */}
             <button
-              className="relative z-10 flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-card text-foreground transition-all duration-300 hover:border-primary/40 hover:bg-primary/10 md:hidden"
+              className="relative z-10 flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-card text-foreground transition-all duration-300 hover:border-[#0706F1]/40 hover:bg-[#0706F1]/10 md:hidden"
               onClick={() => setOpen(!open)}
             >
               <AnimatePresence mode="wait">
@@ -179,11 +178,10 @@ const Navbar = () => {
                       initial={{ x: -20, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ delay: i * 0.05 }}
-                      className={`group flex items-center justify-between rounded-lg px-4 py-3 text-sm font-medium transition-all ${
-                        activeSection === link.href
-                          ? "bg-primary/10 text-primary"
-                          : "text-muted-foreground hover:bg-card hover:text-foreground"
-                      }`}
+                      className={`group flex items-center justify-between rounded-lg px-4 py-3 text-sm font-medium transition-all ${activeSection === link.href
+                        ? "bg-[#0706F1]/10 text-primary"
+                        : "text-muted-foreground hover:bg-card hover:text-foreground"
+                        }`}
                     >
                       {link.label}
                       <ArrowRight
@@ -205,7 +203,7 @@ const Navbar = () => {
                       <a
                         href="#contact"
                         onClick={(e) => handleNavClick(e, "#contact")}
-                        className="flex items-center justify-center gap-2"
+                        className="flex items-center justify-center gap-2 text-primary"
                       >
                         Get in Touch
                         <ArrowRight size={14} />

@@ -25,7 +25,7 @@ const AboutSection = () => {
           className="mb-14 max-w-xl space-y-6"
         >
           <div className="flex items-center gap-4">
-            <span className="h-[2px] w-12 bg-primary" />
+            <span className="h-[2px] w-12 bg-[#0706F1]" />
             <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">
               About Me
             </span>
@@ -71,7 +71,7 @@ const AboutSection = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.1 }}
-                  className="rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-medium text-primary sm:text-sm"
+                  className="rounded-full border border-[#0706F1]/20 bg-[#0706F1]/5 px-4 py-1.5 text-xs font-medium text-primary sm:text-sm"
                 >
                   {tag}
                 </motion.span>
@@ -84,10 +84,10 @@ const AboutSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-10 rounded-2xl border border-border bg-card p-5 transition-colors hover:border-primary/30 sm:p-7"
+              className="mt-10 rounded-2xl border border-border bg-card p-5 transition-colors hover:border-[#0706F1]/30 sm:p-7"
             >
               <div className="mb-4 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#0706F1]/10 text-primary">
                   <Target size={20} />
                 </div>
                 <h3 className="text-lg font-bold text-foreground sm:text-xl">The Mission</h3>
@@ -111,9 +111,9 @@ const AboutSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.12 }}
-                  className="group rounded-2xl border border-border bg-card p-4 text-center transition-all duration-300 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 sm:p-6"
+                  className="group rounded-2xl border border-border bg-card p-4 text-center transition-all duration-300 hover:border-[#0706F1]/40 hover:shadow-lg hover:shadow-[#0706F1]/5 sm:p-6"
                 >
-                  <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary/20 sm:h-12 sm:w-12">
+                  <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-[#0706F1]/10 text-primary transition-colors duration-300 group-hover:bg-[#0706F1]/20 sm:h-12 sm:w-12">
                     <stat.icon size={20} className="sm:h-6 sm:w-6" />
                   </div>
                   <p className="text-2xl font-bold text-foreground sm:text-3xl lg:text-4xl">{stat.value}</p>

@@ -78,7 +78,7 @@ const ResearchSection = () => {
           className="mb-16 max-w-2xl space-y-6"
         >
           <div className="flex items-center gap-4">
-            <span className="h-[2px] w-12 bg-primary" />
+            <span className="h-[2px] w-12 bg-[#0706F1]" />
             <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">
               Research Portfolio
             </span>
@@ -116,11 +116,11 @@ const ResearchSection = () => {
             <motion.div
               key={area.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-500 hover:border-primary/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5 sm:p-7"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:p-7"
             >
-              <div className="absolute -bottom-6 -right-6 h-20 w-20 rounded-full bg-primary/5 blur-xl transition-all duration-500 group-hover:h-28 group-hover:w-28 group-hover:bg-primary/10" />
+              <div className="absolute -bottom-6 -right-6 h-20 w-20 rounded-full bg-[#0706F1]/5 blur-xl transition-all duration-500 group-hover:h-28 group-hover:w-28 group-hover:bg-[#0706F1]/10" />
               <div className="relative">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/40">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0706F1]/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-[#0706F1]/15 group-hover:ring-primary/40">
                   {area.icon}
                 </div>
                 <h4 className="mb-2 text-base font-bold text-foreground sm:text-lg">
@@ -162,17 +162,17 @@ const ResearchSection = () => {
             <motion.div
               key={pub.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:border-primary/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0706F1]/5"
             >
               {/* Top colored bar */}
               <div className="h-1 w-full bg-gradient-to-r from-primary/40 to-primary/10" />
 
               <div className="p-6 sm:p-7">
                 <div className="mb-4 flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/40">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#0706F1]/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-[#0706F1]/15 group-hover:ring-primary/40">
                     {pub.icon}
                   </div>
-                  <span className="rounded-full bg-primary/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+                  <span className="rounded-full bg-[#0706F1]/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
                     {pub.type}
                   </span>
                 </div>
@@ -205,18 +205,18 @@ const ResearchSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="group relative overflow-hidden rounded-[1.5rem] border border-border bg-gradient-to-br from-card via-card to-primary/[0.03] transition-all duration-500 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5"
+          className="group relative overflow-hidden rounded-[1.5rem] border border-border bg-gradient-to-br from-card via-card to-primary/[0.03] transition-all duration-500 hover:border-[#0706F1]/30 hover:shadow-xl hover:shadow-[#0706F1]/5"
         >
-          <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/10" />
+          <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-[#0706F1]/5 blur-3xl transition-all duration-700 group-hover:bg-[#0706F1]/10" />
 
           <div className="relative flex flex-col sm:flex-row">
             <div className="flex items-center justify-center p-8 sm:w-56 sm:p-12">
-              <div className="flex h-24 w-24 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/40 sm:h-28 sm:w-28">
+              <div className="flex h-24 w-24 items-center justify-center rounded-2xl bg-[#0706F1]/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-[#0706F1]/15 group-hover:ring-primary/40 sm:h-28 sm:w-28">
                 <BookMarked size={40} className="sm:h-12 sm:w-12" />
               </div>
             </div>
             <div className="flex-1 p-6 sm:py-10 sm:pr-10">
-              <span className="mb-3 inline-block rounded-full bg-primary/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+              <span className="mb-3 inline-block rounded-full bg-[#0706F1]/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
                 Book
               </span>
               <h4 className="mt-2 text-2xl font-black uppercase tracking-tight text-foreground sm:text-3xl lg:text-4xl">

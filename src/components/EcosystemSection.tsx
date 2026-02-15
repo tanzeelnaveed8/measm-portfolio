@@ -104,7 +104,7 @@ const EcosystemSection = () => {
           className="mb-12 max-w-2xl space-y-4 sm:mb-16 sm:space-y-6"
         >
           <div className="flex items-center gap-4">
-            <span className="h-[2px] w-12 bg-primary" />
+            <span className="h-[2px] w-12 bg-[#0706F1]" />
             <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">
               Strategic Ecosystem
             </span>
@@ -140,11 +140,11 @@ const EcosystemSection = () => {
             <motion.div
               key={card.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-card via-card to-primary/[0.03] p-6 transition-all duration-500 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:rounded-[1.5rem] sm:p-7 md:p-9"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-card via-card to-primary/[0.03] p-6 transition-all duration-500 hover:border-[#0706F1]/30 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:rounded-[1.5rem] sm:p-7 md:p-9"
             >
-              <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-primary/5 blur-2xl transition-all duration-700 group-hover:bg-primary/10 sm:-right-8 sm:-top-8 sm:h-32 sm:w-32" />
+              <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-[#0706F1]/5 blur-2xl transition-all duration-700 group-hover:bg-[#0706F1]/10 sm:-right-8 sm:-top-8 sm:h-32 sm:w-32" />
               <div className="relative">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/40 sm:mb-5 sm:h-14 sm:w-14 sm:rounded-2xl">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0706F1]/10 text-primary ring-1 ring-focus-ring/20 transition-all duration-300 group-hover:bg-[#0706F1]/15 group-hover:ring-focus-ring/40 sm:mb-5 sm:h-14 sm:w-14 sm:rounded-2xl">
                   {card.icon}
                 </div>
                 <h3 className="mb-2 text-lg font-black uppercase tracking-tight text-foreground sm:mb-3 sm:text-xl md:text-2xl">
@@ -183,11 +183,11 @@ const EcosystemSection = () => {
             <motion.div
               key={area.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card p-5 transition-all duration-500 hover:border-primary/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5 sm:rounded-2xl sm:p-6"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card p-5 transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:rounded-2xl sm:p-6"
             >
-              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-primary/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-primary/10 sm:-bottom-6 sm:-right-6 sm:h-20 sm:w-20 sm:group-hover:h-28 sm:group-hover:w-28" />
+              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-[#0706F1]/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-[#0706F1]/10 sm:-bottom-6 sm:-right-6 sm:h-20 sm:w-20 sm:group-hover:h-28 sm:group-hover:w-28" />
               <div className="relative">
-                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/40 sm:mb-4 sm:h-12 sm:w-12 sm:rounded-xl">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-[#0706F1]/10 text-primary ring-1 ring-focus-ring/20 transition-all duration-300 group-hover:bg-[#0706F1]/15 group-hover:ring-focus-ring/40 sm:mb-4 sm:h-12 sm:w-12 sm:rounded-xl">
                   {area.icon}
                 </div>
                 <h4 className="mb-2 text-sm font-bold text-foreground sm:text-base">{area.title}</h4>
@@ -229,9 +229,9 @@ const EcosystemSection = () => {
             <motion.div
               key={step.step}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-7 transition-all duration-500 hover:border-primary/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5 sm:p-8"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-7 transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:p-8"
             >
-              <span className="absolute -left-2 top-4 text-[5rem] font-black leading-none text-primary/[0.06] sm:text-[6rem]">
+              <span className="absolute -left-2 top-4 text-[5rem] font-black leading-none text-[#F8FAFC]/[0.04] sm:text-[6rem]">
                 {step.step}
               </span>
               <div className="relative pt-10 sm:pt-12">
@@ -276,11 +276,11 @@ const EcosystemSection = () => {
             <motion.div
               key={item.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-500 hover:border-primary/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0706F1]/5"
             >
-              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-primary/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-primary/10" />
+              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-[#0706F1]/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-[#0706F1]/10" />
               <div className="relative flex gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/40">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0706F1]/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-[#0706F1]/15 group-hover:ring-primary/40">
                   {item.icon}
                 </div>
                 <div>

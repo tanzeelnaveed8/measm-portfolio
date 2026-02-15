@@ -106,7 +106,7 @@ const ImpactSection = () => {
           className="mb-12 max-w-2xl space-y-4 sm:mb-16 sm:space-y-6"
         >
           <div className="flex items-center gap-4">
-            <span className="h-[2px] w-12 bg-primary" />
+            <span className="h-[2px] w-12 bg-[#0706F1]" />
             <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">
               Global Recognition & Service
             </span>
@@ -144,11 +144,11 @@ const ImpactSection = () => {
             <motion.div
               key={item.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-[1.5rem] border border-border bg-gradient-to-br from-card via-card to-primary/[0.03] p-7 transition-all duration-500 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-9"
+              className="group relative overflow-hidden rounded-[1.5rem] border border-border bg-gradient-to-br from-card via-card to-primary/[0.03] p-7 transition-all duration-500 hover:border-[#0706F1]/30 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:p-9"
             >
-              <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-primary/5 blur-2xl transition-all duration-700 group-hover:bg-primary/10" />
+              <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-[#0706F1]/5 blur-2xl transition-all duration-700 group-hover:bg-[#0706F1]/10" />
               <div className="relative">
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/40">
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0706F1]/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-[#0706F1]/15 group-hover:ring-primary/40">
                   {item.icon}
                 </div>
                 <h4 className="mb-2 text-xl font-black uppercase tracking-tight text-foreground sm:text-2xl">
@@ -161,7 +161,7 @@ const ImpactSection = () => {
                   {item.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full bg-primary/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary"
+                      className="rounded-full bg-[#0706F1]/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary"
                     >
                       {tag}
                     </span>
@@ -197,11 +197,11 @@ const ImpactSection = () => {
             <motion.div
               key={prog.name}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 text-center transition-all duration-500 hover:border-primary/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 text-center transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0706F1]/5"
             >
-              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-primary/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-primary/10" />
+              <div className="absolute -bottom-4 -right-4 h-16 w-16 rounded-full bg-[#0706F1]/5 blur-xl transition-all duration-500 group-hover:h-24 group-hover:w-24 group-hover:bg-[#0706F1]/10" />
               <div className="relative">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/40">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0706F1]/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-[#0706F1]/15 group-hover:ring-primary/40">
                   {prog.icon}
                 </div>
                 <h4 className="mb-1 text-base font-bold text-foreground">{prog.name}</h4>
@@ -238,15 +238,15 @@ const ImpactSection = () => {
             <motion.div
               key={item.title}
               variants={fadeUp}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:border-primary/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0706F1]/5"
             >
               <div className="h-1 w-full bg-gradient-to-r from-primary/40 to-primary/10" />
               <div className="p-6 sm:p-7">
                 <div className="mb-4 flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-primary/15 group-hover:ring-primary/40">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#0706F1]/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:bg-[#0706F1]/15 group-hover:ring-primary/40">
                     {item.icon}
                   </div>
-                  <span className="rounded-full bg-primary/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+                  <span className="rounded-full bg-[#0706F1]/10 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
                     {item.tag}
                   </span>
                 </div>
