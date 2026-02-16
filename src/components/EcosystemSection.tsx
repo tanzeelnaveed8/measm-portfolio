@@ -231,7 +231,7 @@ const EcosystemSection = () => {
               variants={fadeUp}
               className="group relative overflow-hidden rounded-2xl border border-border bg-card p-7 transition-all duration-500 hover:border-[#0706F1]/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:p-8"
             >
-              <span className="absolute -left-2 top-4 text-[5rem] font-black leading-none text-[#F8FAFC]/[0.04] sm:text-[6rem]">
+              <span className="absolute -left-2 top-4 text-[5rem] font-black leading-none text-[#0706F1]/30 sm:text-[6rem]">
                 {step.step}
               </span>
               <div className="relative pt-10 sm:pt-12">
