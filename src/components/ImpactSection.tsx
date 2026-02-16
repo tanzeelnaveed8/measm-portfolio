@@ -44,7 +44,7 @@ const programs = [
   },
   {
     name: "TKS",
-    description: "The Knowledge Society — innovation and future-building.",
+    description: "The Knowledge Society innovation and future-building.",
     icon: <Rocket size={20} />,
   },
   {
@@ -70,7 +70,7 @@ const citizenship = [
   {
     title: "Diplomatic Representation",
     description:
-      "Representing organizations and causes on global stages — policy, sustainability, and youth.",
+      "Representing organizations and causes on global stages policy, sustainability, and youth.",
     tag: "Global Ambassador",
     icon: <Handshake size={22} />,
   },
@@ -119,7 +119,7 @@ const ImpactSection = () => {
           </p>
         </motion.div>
 
-        {/* 01 — Recognition */}
+        {/* 01 Recognition */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -172,7 +172,7 @@ const ImpactSection = () => {
           ))}
         </motion.div>
 
-        {/* 02 — Academic & Corporate Path */}
+        {/* 02 Academic & Corporate Path */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -213,7 +213,7 @@ const ImpactSection = () => {
           ))}
         </motion.div>
 
-        {/* 03 — Global Citizenship */}
+        {/* 03 Global Citizenship */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

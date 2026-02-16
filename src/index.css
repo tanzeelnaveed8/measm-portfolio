@@ -146,9 +146,15 @@ section {
   background-color: #0706F1;
   color: #F8FAFC;
 }
+.bg-secondary{
+  background-color: #1E293B;
+}
 .text-primary{
   color: #F8FAFC;
 } 
+.text-secondary{
+  color: #0706F1;
+}
 .shadow-primary {
   box-shadow: 0 4px 10px #0706F1;
 }

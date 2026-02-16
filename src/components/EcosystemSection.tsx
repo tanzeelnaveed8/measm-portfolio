@@ -93,7 +93,7 @@ const fadeUp = {
 
 const EcosystemSection = () => {
   return (
-    <section className="relative overflow-hidden px-4 py-20 sm:px-6 md:py-28 lg:py-32">
+    <section className="relative bg-[#141414]/50 overflow-hidden px-4 py-20 sm:px-6 md:py-28 lg:py-32">
       <div className="relative mx-auto max-w-6xl">
         {/* Header */}
         <motion.div

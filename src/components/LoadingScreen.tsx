@@ -63,7 +63,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
                 delay: 0.9,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="inline-block text-primary"
+              className="inline-block text-[#0706F1]"
             >
               .
             </motion.span>

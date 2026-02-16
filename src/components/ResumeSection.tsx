@@ -164,7 +164,7 @@ const ResumeSection = () => {
           </button>
         </motion.div>
 
-        {/* 01 — Experience */}
+        {/* 01 Experience */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -236,7 +236,7 @@ const ResumeSection = () => {
           ))}
         </motion.div>
 
-        {/* 02 — Education */}
+        {/* 02 Education */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -284,7 +284,7 @@ const ResumeSection = () => {
           ))}
         </motion.div>
 
-        {/* 03 — Skills & Expertise */}
+        {/* 03 Skills & Expertise */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -330,7 +330,7 @@ const ResumeSection = () => {
           ))}
         </motion.div>
 
-        {/* 04 — Additional */}
+        {/* 04 Additional */}
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Certifications */}
           <motion.div

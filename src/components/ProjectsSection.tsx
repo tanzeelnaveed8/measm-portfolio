@@ -384,7 +384,7 @@
 //         label: "03 // Brand Story",
 //         heading: "The story behind Oatify",
 //         description:
-//           "Oatify was created with the belief that breakfast should nourish the body, not cause energy crashes or sugar spikes. In today's fast-paced world, many people struggle with unhealthy morning choices that affect their focus and productivity. Oatify offers a smarter alternative — gluco-balanced oats designed to support stable energy and a healthier start to the day. It's more than just oats; it's a step toward a balanced lifestyle.",
+//           "Oatify was created with the belief that breakfast should nourish the body, not cause energy crashes or sugar spikes. In today's fast-paced world, many people struggle with unhealthy morning choices that affect their focus and productivity. Oatify offers a smarter alternative gluco-balanced oats designed to support stable energy and a healthier start to the day. It's more than just oats; it's a step toward a balanced lifestyle.",
 //         items: [
 //           {
 //             title: "Nourish, not crash",
@@ -401,7 +401,7 @@
 //           {
 //             title: "Beyond just oats",
 //             description:
-//               "More than a product — it's a commitment to balanced living and healthier daily habits.",
+//               "More than a product it's a commitment to balanced living and healthier daily habits.",
 //             icon: <Leaf size={18} />,
 //           },
 //         ],
@@ -1081,19 +1081,20 @@ const itemVariants = {
 const ProjectCard = ({ project, onClick }: { project: Project; onClick: () => void }) => (
   <article
     onClick={onClick}
-    className="group relative h-[350px] cursor-pointer overflow-hidden rounded-[2rem] border border-border bg-card shadow-sm transition-all duration-700 hover:shadow-xl  hover:shadow-[#0706F1]/20 sm:h-[400px] lg:h-[550px]"
+    className="group relative h-[300px] cursor-pointer overflow-hidden rounded-[2rem] border border-border bg-card shadow-sm transition-all duration-700 hover:shadow-xl  hover:shadow-[#0706F1]/20 sm:h-[400px] lg:h-[550px] "
+  // 
   >
     <img
       src={project.image}
       alt={project.title}
-      className="h-full w-full object-cover grayscale-[0.4] transition-all duration-1000 group-hover:scale-110 group-hover:grayscale-0"
+      className="h-full w-full object-cover grayscale-[0.6] transition-all duration-1000 group-hover:scale-110 group-hover:grayscale-0"
     />
 
     <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-90 transition-opacity group-hover:opacity-100" />
 
-    <div className="absolute bottom-0 left-0 w-full space-y-3 p-4 sm:space-y-4 sm:p-6 lg:p-12">
+    <div className="absolute bottom-0 left-0 w-full space-y-3 p-3 sm:space-y-4 sm:p-6 lg:p-8">
       <div className="flex gap-2">
-        <span className="rounded bg-[#0706F1]/10 px-2 py-1 text-[9px] font-bold uppercase tracking-widest text-primary sm:px-3 sm:text-[10px]">
+        <span className="rounded bg-[#0706F1]/60 px-2 py-1 text-[9px] font-bold uppercase tracking-widest text-primary sm:px-3 sm:text-[10px]">
           {project.accent === "featured" ? "Featured" : "Popular"}
         </span>
       </div>
@@ -1113,8 +1114,8 @@ const ProjectCard = ({ project, onClick }: { project: Project; onClick: () => vo
     </div>
 
     <div className="absolute right-4 top-4 translate-x-4 opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100 sm:right-6 sm:top-6 lg:right-10 lg:top-10">
-      <div className="rounded-xl bg-[#0706F1] text-primary p-2.5  shadow-2xl shadow-[#0706F1]/40 sm:rounded-2xl sm:p-3 lg:p-4">
-        <Eye size={16} className="sm:h-5 sm:w-5 lg:h-6 lg:w-6" />
+      <div className="rounded-xl bg-primary text-primary p-2 shadow-2xl shadow-[#0706F1]/40 sm:rounded-2xl sm:p-3 ">
+        <Eye size={14} className="sm:h-5 sm:w-5 lg:h-6 lg:w-6" />
       </div>
     </div>
   </article>
@@ -1196,7 +1197,7 @@ const ProjectsSection = () => {
           viewport={{ once: true, margin: "-40px" }}
           variants={containerVariants}
         >
-          {projects.slice(0, 3).map((project) => (
+          {projects.slice(0, 6).map((project) => (
             <motion.li key={project.title} variants={itemVariants}>
               <ProjectCard
                 project={project}

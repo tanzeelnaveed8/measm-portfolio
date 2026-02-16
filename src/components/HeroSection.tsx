@@ -29,11 +29,20 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5 text-xs font-medium text-muted-foreground">
-              <Sparkles size={14} className="text-primary" />
-              Available for Impact
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#1E293B] bg-[#0B0B0B] px-4 py-1.5 text-xs font-medium text-[#F8FAFC] shadow-sm backdrop-blur-md transition-all duration-300 hover:border-[#0706F1]/40 hover:shadow-[0_0_12px_rgba(7,6,241,0.25)]">
+
+              <Sparkles
+                size={14}
+                className="text-[#0706F1] drop-shadow-[0_0_4px_rgba(7,6,241,0.7)]"
+              />
+
+              <span className="tracking-wide">
+                Available for Impact
+              </span>
+
             </div>
           </motion.div>
+
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}

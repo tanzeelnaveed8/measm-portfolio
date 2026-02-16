@@ -5,7 +5,7 @@ import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Measm doesn't just build products — he builds systems that scale. His climate-tech vision transformed how we approach ESG verification across our entire portfolio.",
+      "Measm doesn't just build products he builds systems that scale. His climate-tech vision transformed how we approach ESG verification across our entire portfolio.",
     name: "Ahmad Al-Farsi",
     role: "Managing Director",
     company: "Gulf Ventures Capital",
@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     quote:
-      "We hired Meetech for a complex SaaS build. What impressed me most was the transparency — every milestone tracked, every decision documented. True founder-led delivery.",
+      "We hired Meetech for a complex SaaS build. What impressed me most was the transparency every milestone tracked, every decision documented. True founder-led delivery.",
     name: "Omar Siddiqui",
     role: "Founder & CEO",
     company: "ScaleUp MENA",
@@ -50,7 +50,7 @@ const testimonials = [
   },
   {
     quote:
-      "From UNICEF collaborations to global youth programs, Measm walks the talk. His impact work isn't performative — it's structural, scalable, and deeply intentional.",
+      "From UNICEF collaborations to global youth programs, Measm walks the talk. His impact work isn't performative it's structural, scalable, and deeply intentional.",
     name: "Priya Sharma",
     role: "Program Lead",
     company: "Global Youth Alliance",
@@ -119,14 +119,14 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.7 }}
           className="mb-12 sm:mb-16"
         >
-          <div className="group relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-card via-card to-primary/[0.03] transition-all duration-500 hover:border-[#0706F1]/30 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:rounded-[1.5rem]">
+          <div className="group relative overflow-hidden rounded-2xl bg-[#141414]/50 border  border-border bg-gradient-to-br from-card via-card to-primary/[0.03] transition-all duration-500 hover:border-[#0706F1]/30 hover:shadow-xl hover:shadow-[#0706F1]/5 sm:rounded-[1.5rem]">
             <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-[#0706F1]/5 blur-3xl transition-all duration-700 group-hover:bg-[#0706F1]/10 sm:-right-12 sm:-top-12 sm:h-40 sm:w-40" />
             <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-[#0706F1]/5 blur-3xl sm:-bottom-8 sm:-left-8 sm:h-32 sm:w-32" />
 
             <div className="relative p-6 sm:p-8 md:p-10 lg:p-14">
               <Quote
                 size={36}
-                className="mb-4 text-primary/15 sm:mb-6 sm:h-12 sm:w-12"
+                className="mb-4 text-primary/15 bg-[#141414]/50 sm:mb-6 sm:h-12 sm:w-12"
               />
 
               <AnimatePresence mode="wait">
@@ -172,13 +172,13 @@ const TestimonialsSection = () => {
               <div className="mt-6 flex items-center gap-2 sm:mt-8 sm:gap-3">
                 <button
                   onClick={prev}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-muted-foreground transition-all duration-300 hover:border-[#0706F1]/40 hover:text-primary sm:h-10 sm:w-10 md:h-12 md:w-12"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-primary bg-primary transition-all duration-300 hover:border-[#0706F1]/40 hover:text-primary sm:h-10 sm:w-10 md:h-12 md:w-12"
                 >
                   <ChevronLeft size={16} className="sm:h-5 sm:w-5" />
                 </button>
                 <button
                   onClick={next}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-muted-foreground transition-all duration-300 hover:border-[#0706F1]/40 hover:text-primary sm:h-10 sm:w-10 md:h-12 md:w-12"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-border  text-primary bg-primary  transition-all duration-300 hover:border-[#0706F1]/40 hover:text-primary sm:h-10 sm:w-10 md:h-12 md:w-12"
                 >
                   <ChevronRight size={16} className="sm:h-5 sm:w-5" />
                 </button>

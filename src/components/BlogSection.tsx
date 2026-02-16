@@ -4,7 +4,7 @@ import { ArrowRight, Calendar } from "lucide-react";
 const posts = [
   {
     title: "Why Most Rebrands Fail (And How to Get Yours Right)",
-    excerpt: "A deep dive into the strategic mistakes that derail brand transformations — and the framework I use with every client.",
+    excerpt: "A deep dive into the strategic mistakes that derail brand transformations and the framework I use with every client.",
     date: "Jan 15, 2026",
   },
   {

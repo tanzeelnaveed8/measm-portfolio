@@ -18,47 +18,54 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (e, href) => {
     e.preventDefault();
     setOpen(false);
+    setActiveSection(href);
 
     setTimeout(() => {
-      const targetId = href.substring(1);
-      const element = document.getElementById(targetId);
-      if (element) {
-        const offset = 100;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - offset;
+      const id = href.substring(1);
+      const el = document.getElementById(id);
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
+      if (el) {
+        const offset = 100;
+        const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+
+        window.scrollTo({ top: y, behavior: "smooth" });
       }
     }, 100);
   };
+
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      // Detect active section
-      const sections = navLinks.map((link) => link.href.substring(1));
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= 100 && rect.bottom >= 100) {
-            setActiveSection(`#${section}`);
-            break;
+      let current = "";
+
+      navLinks.forEach((link) => {
+        const id = link.href.substring(1);
+        const el = document.getElementById(id);
+
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          const middle = window.innerHeight / 2;
+
+          if (rect.top <= middle && rect.bottom >= middle) {
+            current = link.href;
           }
         }
-      }
+      });
+
+      setActiveSection(current);
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
 
   return (
     <motion.nav
@@ -84,9 +91,9 @@ const Navbar = () => {
               className="group relative text-xl font-black tracking-tight text-foreground sm:text-2xl"
             >
               Measm
-              {/* <span className="text-primary transition-all duration-300 group-hover:text-foreground">
+              <span className="text-secondary transition-all duration-300 group-hover:text-foreground">
                 .
-              </span> */}
+              </span>
               <div className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#0706F1] transition-all duration-300 group-hover:w-full" />
             </a>
 
@@ -103,13 +110,17 @@ const Navbar = () => {
                     }`}
                 >
                   {link.label}
-                  {activeSection === link.href && (
-                    <motion.div
-                      layoutId="activeSection"
-                      className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#0706F1]"
-                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                    />
-                  )}
+                  <motion.div
+                    className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#0706F1]"
+                    initial={false}
+                    animate={{
+                      opacity: activeSection === link.href ? 1 : 0,
+                      scaleX: activeSection === link.href ? 1 : 0
+                    }}
+                    transition={{ duration: 0.25, ease: "easeOut" }}
+                    style={{ originX: 0 }}
+                  />
+
                   {activeSection !== link.href && (
                     <div className="absolute bottom-0 left-0 right-0 h-[2px] w-0 bg-[#0706F1]/50 transition-all duration-300 group-hover:w-full" />
                   )}

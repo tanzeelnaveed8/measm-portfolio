@@ -25,7 +25,7 @@ const footerLinks = {
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden border-t border-border bg-card/30 px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:py-24">
+    <footer className="relative bg-[#141414]/50 overflow-hidden border-t border-border px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:py-24">
       <div className="relative mx-auto max-w-6xl">
         {/* Glow effects */}
         <div className="absolute -left-20 top-0 h-32 w-32 rounded-full bg-[#0706F1]/5 blur-3xl sm:h-40 sm:w-40" />
@@ -36,7 +36,7 @@ const Footer = () => {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <h3 className="mb-3 text-lg font-bold text-foreground sm:mb-4 sm:text-xl">
-              Measm<span className="text-primary">.</span>
+              Measm<span className="text-[#0706F1]">.</span>
             </h3>
             <p className="mb-4 text-xs leading-relaxed text-muted-foreground sm:mb-6 sm:text-sm">
               Climate-Tech Entrepreneur & Global Impact Builder. Building systems that scale.
@@ -134,7 +134,7 @@ const Footer = () => {
         >
           <Link to="/measm" className="group inline-block">
             <h2 className="text-5xl font-black uppercase leading-none tracking-tighter text-foreground transition-all duration-300 group-hover:text-primary sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
-              Measm<span className="text-primary group-hover:text-foreground">.</span>
+              Measm<span className="text-[#0706F1] ">.</span>
             </h2>
           </Link>
         </motion.div>

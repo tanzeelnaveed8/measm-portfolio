@@ -98,7 +98,7 @@ const AcademicSection = () => {
      ];
 
      return (
-          <div className="min-h-screen bg-[#0B0B0B] text-[#F8FAFC] font-sans selection:bg-[#0706F1] selection:text-primary">
+          <div className="min-h-screen bg-[#141414]/50 text-[#F8FAFC] font-sans selection:bg-[#0706F1] selection:text-primary">
                <section id="academic-portfolio" className="relative overflow-hidden px-4 py-16 sm:px-6 sm:py-20 md:py-28 lg:py-32">
                     {/* Decorative background elements */}
                     <div className="absolute left-0 top-1/4 h-96 w-96 rounded-full bg-[#0706F1]/10 blur-[120px]" />
