@@ -42,6 +42,20 @@ const AcademicSection = () => {
      // 01 / Education & Honors
      const educationHonors = [
           {
+               title: "High Schooling",
+               tag: "Secondary Education",
+               description: "Completed secondary studies from Penn Foster High School (USA).",
+               icon: <GraduationCap className="w-6 h-6" />,
+               org: "Penn Foster High School"
+          },
+          {
+               title: "Undergraduate Studies",
+               tag: "Business Analytics",
+               description: "Pursuing undergraduate program focused on Business Analytics.",
+               icon: <BookOpen className="w-6 h-6" />,
+               org: "University of North Texas"
+          },
+          {
                title: "Delta Epsilon Tau Induction",
                tag: "Honor Society",
                description: "Recognized for distance education excellence and academic integrity (2025).",
@@ -63,6 +77,7 @@ const AcademicSection = () => {
                org: "Oxford/Princeton"
           }
      ];
+
 
      // 02 / Scholarships & Accelerators
      const accelerators = [

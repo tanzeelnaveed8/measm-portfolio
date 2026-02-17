@@ -76,7 +76,7 @@ const Navbar = () => {
     >
       <div
         className={`relative w-full max-w-6xl overflow-hidden rounded-2xl border transition-all duration-500 ${scrolled
-          ? "border-border/40 bg-background/95 shadow-xl shadow-black/20"
+          ? "border-border bg-background/95 shadow-xl shadow-black/20"
           : "border-border bg-background/80 shadow-lg shadow-black/10"
           } backdrop-blur-xl`}
       >

@@ -94,7 +94,6 @@
 --text-inverse: #FFFFFF;
 
 --accent-primary: #0706F1;
---accent-secondary :#3B5BFF;
 --accent-hover: #0505c7;
 --accent-active: #04049e;
 --accent-muted: rgba(7, 6, 241, 0.15);
@@ -103,7 +102,6 @@
 --bg-accent : #0505c7;
 --focus-ring: #0706F1;
 --focus:#0706F1;
---border: #3B5BFF;
 --text-primary:#F8FAFC;
   }
 }
@@ -165,7 +163,8 @@ section {
   background-color: #0B0B0B;
 }
 .border{
-  border-color: #0a1e41;
+  border-color: #0606f167;
+  
 }
 /* Selected date background */
 .rdp-day_selected,
