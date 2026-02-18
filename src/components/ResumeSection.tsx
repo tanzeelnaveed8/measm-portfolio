@@ -40,19 +40,7 @@ const experience = [
       "Created frameworks for measurable, scalable environmental outcomes",
     ],
   },
-  {
-    role: "Founder",
-    company: "DoorBeyond",
-    location: "Remote · Global",
-    period: "2023 - Present",
-    description:
-      "Strategic branding and creative agency transforming bold ideas into lasting brand identities.",
-    achievements: [
-      "Rebranded 20+ companies across tech, health, and finance sectors",
-      "Developed brand strategies that doubled client conversion rates",
-      "Built reputation for founder-led, execution-first creative work",
-    ],
-  },
+ 
 ];
 
 const education = [

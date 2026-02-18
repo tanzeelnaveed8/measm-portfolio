@@ -41,15 +41,6 @@ const testimonials = [
   },
   {
     quote:
-      "DoorBeyond rebranded our entire identity. The strategic depth behind every design decision showed a level of maturity and vision that most agencies twice their size lack.",
-    name: "James Whitfield",
-    role: "CMO",
-    company: "Forge & Partners, UK",
-    image: "https://i.pravatar.cc/150?img=60",
-    rating: 5,
-  },
-  {
-    quote:
       "From UNICEF collaborations to global youth programs, Measm walks the talk. His impact work isn't performative it's structural, scalable, and deeply intentional.",
     name: "Priya Sharma",
     role: "Program Lead",

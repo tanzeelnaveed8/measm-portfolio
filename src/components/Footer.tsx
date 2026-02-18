@@ -12,7 +12,7 @@ const footerLinks = {
   ventures: [
     { label: "Greyn", href: "#work" },
     { label: "Meetech Labs", href: "#work" },
-    { label: "DoorBeyond", href: "#work" },
+    // { label: "DoorBeyond", href: "#work" },
     { label: "Acceptopia", href: "#work" },
   ],
   connect: [
