@@ -6,9 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import LoadingScreen from "@/components/LoadingScreen";
-import Index from "./pages/Index";
-import MeasmPage from "./pages/MeasmPage";
-import NotFound from "./pages/NotFound";
+import Index from "./views/Index";
+import MeasmPage from "./views/MeasmPage";
+import NotFound from "./views/NotFound";
 
 const queryClient = new QueryClient();
 

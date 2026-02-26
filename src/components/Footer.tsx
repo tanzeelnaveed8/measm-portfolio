@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Linkedin, Twitter, Instagram, Mail, ArrowUpRight, Send } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const footerLinks = {
   explore: [
@@ -132,7 +132,7 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
           className="mb-6 text-center sm:mb-8"
         >
-          <Link to="/measm" className="group inline-block">
+          <Link href="/measm" className="group inline-block">
             <h2 className="text-5xl font-black uppercase leading-none tracking-tighter text-foreground transition-all duration-300 group-hover:text-primary sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
               Measm<span className="text-[#0706F1] ">.</span>
             </h2>

@@ -8,7 +8,7 @@ Portfolio website for Muhammad Measm Raza, Founder of Meetech Labs. Building ver
 
 ## Tech Stack
 
-- Vite
+- Next.js 16 (App Router)
 - React 18
 - TypeScript
 - Tailwind CSS
@@ -21,6 +21,18 @@ Portfolio website for Muhammad Measm Raza, Founder of Meetech Labs. Building ver
 npm install
 npm run dev
 ```
+
+## Contact API
+
+Contact form backend now runs inside Next.js API route:
+
+- Endpoint: `/api/contact`
+- File: `app/api/contact/route.ts`
+
+Required environment variables:
+
+- `RESEND_API_KEY`
+- `ADMIN_EMAIL`
 
 ## Contact
 

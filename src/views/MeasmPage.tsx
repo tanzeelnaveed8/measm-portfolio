@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const MeasmPage = () => {
   return (
@@ -14,7 +14,7 @@ const MeasmPage = () => {
         className="absolute left-4 top-4 sm:left-8 sm:top-8"
       >
         <Link
-          to="/"
+          href="/"
           className="flex items-center gap-2 rounded-full border border-[#1E293B] bg-[#1E293B]/30 px-4 py-2 text-sm font-bold uppercase tracking-wider text-[#F8FAFC] transition-all duration-300 hover:border-[#0706F1]/50 hover:bg-[#0706F1]/10"
         >
           <ArrowLeft size={16} />
